@@ -1,10 +1,10 @@
-body {
-    background-color: #fff;
-}
-
-
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+body {
+    background-color: #fff;
+    font-family:"Raleway", serif;
+}
 
 .no-display {
     display: none;
@@ -20,7 +20,7 @@ body {
 }
 
 .title {
-    font-family: "Raleway", serif;
+    font:  "Raleway", serif;
     font-size: 30px;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -57,7 +57,7 @@ button.choose-file-button {
 }
 
 button.analyze-button {
-    font-family: 'Raleway', serif;
+    font: "Raleway", serif;
     width: 200px;
     height: 40px;
     border: solid 1px #7052CB;
