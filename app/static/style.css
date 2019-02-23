@@ -51,28 +51,56 @@ body {
 
 /* Ausgabeinfos, später an csv binden */
 
-.info-general{
+.info-general-titel{
+    font-weight: bold;
     padding: 40px;
     margin-top: 0.5em;
     background-color: #0073e6
 
 }
+.info-general{
+    padding: 20px;
+    padding-bottom: 40px;
+    background-color: #0073e6
 
-.info-market{
+}
+
+.info-market-titel{
+    font-weight: bold;
     padding: 40px;
     margin-top: 0.5em;
     background-color: #4da6ff
 }
 
-.info-recycling{
+.info-market{
+    padding: 20px;
+    padding-bottom: 40px;
+    background-color: #4da6ff
+}
+
+.info-recycling-titel{
+    font-weight: bold;
     padding: 40px;
     margin-top: 0.5em;
     background-color:#b3d9ff
 }
 
-.info-alternatives{
+.info-recycling{
+    padding: 20px;
+    padding-bottom: 40px;
+    background-color:#b3d9ff
+}
+
+.info-alternatives-titel{
+    font-weight: bold;
     padding: 40px;
     margin-top: 0.5em;
+    background-color: #e6f2ff
+}
+
+.info-alternatives{
+    padding: 20px;
+    padding-bottom: 40px;
     background-color: #e6f2ff
 }
 
