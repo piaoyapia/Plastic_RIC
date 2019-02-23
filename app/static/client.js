@@ -46,7 +46,7 @@ console.log(selected);
 }
 
 $.ajax({
-  url: 'https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/static/data.csv',
+  url: 'http://aiplayground.myartsonline.com/data.csv',
   dataType: 'text',
 }).done(print_data);
 //successFunction
