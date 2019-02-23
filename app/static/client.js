@@ -70,9 +70,9 @@ function print_data(data){
   var content = allRows[selection].split('§');
   //Wähle den ersten Eintrags
   el('info_general_content').innerHTML = content[0];
-el('info_market_content').innerHTML = content[1];
-el('info_recycling_content').innerHTML = content[2];
-el('info_alternatives_content').innerHTML = content[3];
+  el('info_market_content').innerHTML = content[1];
+  el('info_recycling_content').innerHTML = content[2];
+  el('info_alternatives_content').innerHTML = content[3];
 
 }
 
