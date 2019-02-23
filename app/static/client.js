@@ -57,7 +57,7 @@ function print_data(data){
   // Selektiert die Reihen
   var allRows = data.split(/\r?\n|\r/);
   // Teilt die erste Zeile
-  var titel = allRows[0].split(',');
+  var titel = allRows[0].split('§');
   // Wählt den ersten Eintrag der Ersten Zeile und schreibt in HTML
   el('info_general_titel').innerHTML = titel[0];
   el('info_market_titel').innerHTML = titel[1];
