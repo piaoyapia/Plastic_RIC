@@ -47,7 +47,19 @@ console.log(selected);
 $.ajax({
   url: 'https://raw.githubusercontent.com/F-R-S/Plastic_RIC/master/app/static/data.csv',
   dataType: 'text',
-}).done(successFunction);
+}).done(print_data);
+//successFunction
+
+function print_data(data){
+  var allRows = data.split(/\r?\n|\r/);
+  var titel = allRows[0].split(',');
+  console.log(titel[0]);
+}
+
+
+
+
+
 
 function successFunction(data) {
   var allRows = data.split(/\r?\n|\r/);
@@ -60,6 +72,7 @@ function successFunction(data) {
       table += '<tr>';
     }
     var rowCells = allRows[singleRow].split(',');
+
     for (var rowCell = 0; rowCell < rowCells.length; rowCell++) {
       if (singleRow === 0) {
         table += '<th>';
