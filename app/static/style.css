@@ -52,6 +52,7 @@ body {
 /* Ausgabeinfos, später an csv binden */
 
 .info-general-titel{
+    font-family: "Rock Salt", cursive;
     font-weight: bold;
     padding: 40px;
     margin-top: 0.5em;
@@ -66,6 +67,7 @@ body {
 }
 
 .info-market-titel{
+    font-family: "Rock Salt", cursive;
     font-weight: bold;
     padding: 40px;
     margin-top: 0.5em;
@@ -79,6 +81,7 @@ body {
 }
 
 .info-recycling-titel{
+    font-family: "Rock Salt", cursive;
     font-weight: bold;
     padding: 40px;
     margin-top: 0.5em;
@@ -92,6 +95,7 @@ body {
 }
 
 .info-alternatives-titel{
+    font-family: "Rock Salt", cursive;
     font-weight: bold;
     padding: 40px;
     margin-top: 0.5em;
