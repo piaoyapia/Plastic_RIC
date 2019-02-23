@@ -67,7 +67,7 @@ function print_data(data){
   // Der gewählte Eintrag
 
   // Splitte die Reihe des Eintrags
-  var content = allRows[selection].split(',');
+  var content = allRows[selection].split('§');
   //Wähle den ersten Eintrags
   el('info_general_content').innerHTML = content[0];
 el('info_market_content').innerHTML = content[1];
