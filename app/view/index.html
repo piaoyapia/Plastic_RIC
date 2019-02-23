@@ -8,10 +8,10 @@
 </head>
 <body>
 <div>
-    <div class='center'>
+    <div class='left'>
         <div class='title'>Plastic Classifier RIC</div>
         <p>
-            This App is build to classify between the different plastics defined by the RIC.
+            In everyday life, plastic often seems to be just everywhere. This app is supposed to give some information about the plastics we use everyday. The Resin identification code (RIC)  is a symbol appearing on products which shows the resin the plastic is made of. The following classifier makes it possible to identify the plastic and to give some information about the environmental issues revolving around the classified plastic.
         </p>
         <div class='content'>
             <div class='no-display'>
@@ -22,12 +22,12 @@
                        accept='image/*'
                        onchange='showPicked(this)'>
             </div>
-            <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+            <button class='choose-file-button' type='button' onclick='showPicker()'>Take Photo</button>
             <div class='upload-label'>
-                <label id='upload-label'>No file chosen</label>
+                <label id='upload-label'>Click on 'Take Photo' to analyze a plastic label nearby.</label>
             </div>
             <div>
-                <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+                <img id='image-picked' class='no-display' alt='Chosen Image' height=400em, width=auto>
             </div>
             <div class='analyze'>
                 <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
@@ -35,7 +35,28 @@
             <div class='result-label'>
                 <label id='result-label'></label>
             </div>
-        </div>
+            <div id='info_general'class='info-general'>
+                <p> Hier stehen alle Infos über das Plastik, das wir analysiert haben.
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                  Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                  At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </div>
+            <div class='info-graphic'>
+                <p> Eine Infografik, mit Infos über Marktanteil o.ä.
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                  At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                  At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </div>
+            <div class='info-nature'>
+                <p> Wie lange dauert es, das Plastik abzubauen? Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                  At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </div>
+            <div class='info-alternatives'>
+                <p> Umweltschonendere Alternativen. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                  At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                  sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
     </div>
 </div>
 

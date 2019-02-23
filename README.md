@@ -1,7 +1,3 @@
-# Starter for deploying [fast.ai](https://www.fast.ai) models on [Render](https://render.com)
+7 classes of plastics defined by the RIC:
 
-This repo can be used as a starting point to deploy [fast.ai](https://github.com/fastai/fastai) models on Render.
-
-The sample app described here is up at https://fastai-v3.onrender.com. Test it out with bear images!
-
-The guide for production deployment to Render is at https://course.fast.ai/deployment_render.html.
+1_polyethylene_PET; 2_high_density_polyethylene_PE-HD; 3_polyvinylchloride_PVC; 4_low_density_polyethylene_PE-LD; 5_polypropylene_PP; 6_polystyrene_PS; 7_other_resins
