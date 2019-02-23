@@ -1,26 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
 
 body {
     background-color: #fff;
-    font-family:"Raleway", serif;
+    font-family:"Muli", serif;
 }
 
 .no-display {
     display: none;
 }
 
-.center {
+.left {
     margin: auto;
     padding: 10px;
     padding-left:50px;
     padding-right:50px;
-    text-align: center;
+    text-align: left;
     font-size: 14px;
 }
 
 .title {
+    font-family: "Rock Salt", cursive;
     font-weight: bold;
+    text-align: left;
     font-size: 30px;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -28,6 +30,7 @@ body {
 }
 
 .content {
+    text-align: center;
     margin-top: 5em;
 }
 
@@ -46,23 +49,52 @@ body {
     font-size: 13px;
 }
 
+/* Ausgabeinfos, später an csv binden */
+
+.info-general{
+    padding: 40px;
+    margin-top: 0.5em;
+    background-color: #0073e6
+
+}
+
+.info-graphic{
+    padding: 40px;
+    margin-top: 0.5em;
+    background-color: #4da6ff
+}
+
+.info-nature{
+    padding: 40px;
+    margin-top: 0.5em;
+    background-color:#b3d9ff
+}
+
+.info-alternatives{
+    padding: 40px;
+    margin-top: 0.5em;
+    background-color: #e6f2ff
+}
+
+/* Ende */
+
 button.choose-file-button {
   width: 200px;
   height: 40px;
   border-radius: 2px;
   background-color: #ffffff;
-  border: solid 1px #7052CB;
+  border: solid 1px #ffbf00;
   font-size: 13px;
-  color: #7052CB;
+  color: #ffbf00;
 }
 
 button.analyze-button {
-    font: "Raleway", serif;
+    font: "Muli", serif;
     width: 200px;
     height: 40px;
-    border: solid 1px #7052CB;
+    border: solid 1px #ffbf00;
     border-radius: 2px;
-    background-color: #7052CB;
+    background-color: #ffbf00;
     font-size: 13px;
     color: #ffffff;
 }
