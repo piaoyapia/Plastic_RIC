@@ -78,10 +78,6 @@ el('info_alternatives_content').innerHTML = content[3];
 
 
 
-
-
-
-
 function successFunction(data) {
   var allRows = data.split(/\r?\n|\r/);
   var table = '<table>';
