@@ -46,7 +46,7 @@ console.log(selected);
 }
 
 $.ajax({
-  url: 'https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/static/data.csv',
+  url: 'http://aiplayground.myartsonline.com/data.csv',
   dataType: 'text',
 }).done(print_data);
 //successFunction
@@ -67,53 +67,11 @@ function print_data(data){
   // Der gewählte Eintrag
 
   // Splitte die Reihe des Eintrags
-  var content = allRows[selection].split(',');
+  var content = allRows[selection].split('§');
   //Wähle den ersten Eintrags
   el('info_general_content').innerHTML = content[0];
 el('info_market_content').innerHTML = content[1];
 el('info_recycling_content').innerHTML = content[2];
 el('info_alternatives_content').innerHTML = content[3];
 
-}
-
-
-
-
-
-
-
-function successFunction(data) {
-  var allRows = data.split(/\r?\n|\r/);
-  var table = '<table>';
-  for (var singleRow = 0; singleRow < allRows.length; singleRow++) {
-    if (singleRow === 0) {
-      table += '<thead>';
-      table += '<tr>';
-    } else {
-      table += '<tr>';
-    }
-    var rowCells = allRows[singleRow].split(',');
-
-    for (var rowCell = 0; rowCell < rowCells.length; rowCell++) {
-      if (singleRow === 0) {
-        table += '<th>';
-        table += rowCells[rowCell];
-        table += '</th>';
-      } else {
-        table += '<td>';
-        table += rowCells[rowCell];
-        table += '</td>';
-      }
-    }
-    if (singleRow === 0) {
-      table += '</tr>';
-      table += '</thead>';
-      table += '<tbody>';
-    } else {
-      table += '</tr>';
-    }
-  }
-  table += '</tbody>';
-  table += '</table>';
-  $('body').append(table);
 }

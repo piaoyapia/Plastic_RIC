@@ -58,13 +58,13 @@ body {
 
 }
 
-.info-graphic{
+.info-market{
     padding: 40px;
     margin-top: 0.5em;
     background-color: #4da6ff
 }
 
-.info-nature{
+.info-recycling{
     padding: 40px;
     margin-top: 0.5em;
     background-color:#b3d9ff
@@ -118,4 +118,4 @@ th, td {
 
 th {
   border-bottom: 1px solid #d4d4d4;
-}     
+}
