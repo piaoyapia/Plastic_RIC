@@ -51,10 +51,30 @@ $.ajax({
 //successFunction
 
 function print_data(data){
+    var selection = 4 ;
+/// Konstante Überschriften
+  // Selektiert die Reihen
   var allRows = data.split(/\r?\n|\r/);
+  // Teilt die erste Zeile
   var titel = allRows[0].split(',');
-  console.log(titel[0]);
+  // Wählt den ersten Eintrag der Ersten Zeile und schreibt in HTML
+  el('info_general_titel').innerHTML = titel[0];
+  el('info_market_titel').innerHTML = titel[1];
+  el('info_recycling_titel').innerHTML = titel[2];
+    el('info_alternatives_titel').innerHTML = titel[3];
+// Varibel Content
+  // Der gewählte Eintrag
+
+  // Splitte die Reihe des Eintrags
+  var content = allRows[selection].split(',');
+  //Wähle den ersten Eintrags
+  el('info_general_content').innerHTML = content[0];
+el('info_market_content').innerHTML = content[1];
+el('info_recycling_content').innerHTML = content[2];
+el('info_alternatives_content').innerHTML = content[3];
+
 }
+
 
 
 
