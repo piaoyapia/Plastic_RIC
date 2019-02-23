@@ -52,7 +52,7 @@ $.ajax({
 //successFunction
 
 function print_data(data){
-    var selection = 4 ;
+    var selection = 3 ;
 /// Konstante Überschriften
   // Selektiert die Reihen
   var allRows = data.split(/\r?\n|\r/);
