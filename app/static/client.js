@@ -8,7 +8,7 @@ var el = x => document.getElementById(x);
 
 function set_selection()
 {
-selection = 99
+selection = 1;
 }
 
 function showPicker(inputId) { el('file-input').click();
