@@ -66,6 +66,30 @@ $.ajax({
 
 function print_data(data){
 
+if(selection != 99){
+/// Konstante Überschriften
+  // Selektiert die Reihen
+  var allRows = data.split(/\r?\n|\r/);
+  // Teilt die erste Zeile
+  var titel = allRows[0].split('§');
+  // Wählt den ersten Eintrag der Ersten Zeile und schreibt in HTML
+  el('info_general_titel').innerHTML = titel[0];
+  el('info_market_titel').innerHTML = titel[1];
+  el('info_recycling_titel').innerHTML = titel[2];
+  el('info_alternatives_titel').innerHTML = titel[3];
+// Varibel Content
+  // Der gewählte Eintrag
+
+  // Splitte die Reihe des Eintrags
+  var content = allRows[selection].split('§');
+  //Wähle den ersten Eintrags
+  el('info_general_content').innerHTML = content[0];
+  el('info_market_content').innerHTML = content[1];
+  el('info_recycling_content').innerHTML = content[2];
+  el('info_alternatives_content').innerHTML = content[3];
+}
+}
+
 //Don't show without Result
 if(launchmode != 0){
 if(selection = 99){
@@ -95,29 +119,5 @@ else{
   document.getElementById("info_alternatives_titel").style.visibility = "visible";
   document.getElementById("info_alternatives_content").style.visibility = "visible";
 
-}
-}
-
-if(selection != 99){
-/// Konstante Überschriften
-  // Selektiert die Reihen
-  var allRows = data.split(/\r?\n|\r/);
-  // Teilt die erste Zeile
-  var titel = allRows[0].split('§');
-  // Wählt den ersten Eintrag der Ersten Zeile und schreibt in HTML
-  el('info_general_titel').innerHTML = titel[0];
-  el('info_market_titel').innerHTML = titel[1];
-  el('info_recycling_titel').innerHTML = titel[2];
-  el('info_alternatives_titel').innerHTML = titel[3];
-// Varibel Content
-  // Der gewählte Eintrag
-
-  // Splitte die Reihe des Eintrags
-  var content = allRows[selection].split('§');
-  //Wähle den ersten Eintrags
-  el('info_general_content').innerHTML = content[0];
-  el('info_market_content').innerHTML = content[1];
-  el('info_recycling_content').innerHTML = content[2];
-  el('info_alternatives_content').innerHTML = content[3];
 }
 }
