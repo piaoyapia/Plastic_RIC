@@ -1,6 +1,6 @@
 //Constant
 // 0 = Debug Mode 1 = Launchmode
-launchmode = 0;
+launchmode = 1;
 
 //Variable
 var el = x => document.getElementById(x);
@@ -94,7 +94,7 @@ else{
 }
 }
 
-
+if(selection != 99){
 /// Konstante Überschriften
   // Selektiert die Reihen
   var allRows = data.split(/\r?\n|\r/);
@@ -115,5 +115,5 @@ else{
   el('info_market_content').innerHTML = content[1];
   el('info_recycling_content').innerHTML = content[2];
   el('info_alternatives_content').innerHTML = content[3];
-
+}
 }
