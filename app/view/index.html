@@ -27,14 +27,16 @@
                        accept='image/*'
                        onchange='showPicked(this)'>
             </div>
+            <button class='choose-file-button' type='button' onclick='showPicker()'>Take Photo
+              <div class='upload-label'>
+                  <label id='upload-label'>Click to choose a picture.</label>
+              </div>
+              <div>
+            </button>
+                <img id='image-picked' class='no-display' alt='Chosen Image' height=350px, width=auto>
+            </div>
+<!-- Oben gut, unten schlecht !-->
 
-            <button class='choose-file-button' type='button' onclick='showPicker()'>Take Photo</button>
-            <div class='upload-label'>
-                <label id='upload-label'>Click to choose a picture.</label>
-            </div>
-            <div>
-                <img id='image-picked' class='no-display' alt='Chosen Image' height=400em, width=auto>
-            </div>
             <div class='analyze'>
                 <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
             </div>
