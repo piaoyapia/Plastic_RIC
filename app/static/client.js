@@ -1,4 +1,11 @@
+//Constant
+// 0 = Debug Mode 1 = Launchmode
+launchmode = 0;
+
+//Variable
 var el = x => document.getElementById(x);
+var selection = 99 ;
+
 
 function showPicker(inputId) { el('file-input').click();
 data_output("1_polyethylene_PE");
@@ -27,7 +34,9 @@ function analyze() {
         if (this.readyState === 4) {
             var response = JSON.parse(e.target.responseText);
             el('result-label').innerHTML = `Result = ${response['result']}`;
-
+            var response_for_selection = `${response['result']}`;
+            var split = response_for_selection.split("_",1);
+            selection = split[0];
         }
         el('analyze-button').innerHTML = 'Analyse';
     }
@@ -52,7 +61,40 @@ $.ajax({
 //successFunction
 
 function print_data(data){
-    var selection = 3 ;
+
+//Don't show without Result
+if(launchmode != 0){
+if(selection = 99){
+  document.getElementById("info_general_titel").style.visibility = "hidden";
+  document.getElementById("info_general_content").style.visibility = "hidden";
+
+  document.getElementById("info_market_titel").style.visibility = "hidden";
+  document.getElementById("info_market_content").style.visibility = "hidden";
+
+  document.getElementById("info_recycling_titel").style.visibility = "hidden";
+  document.getElementById("info_recycling_content").style.visibility = "hidden";
+
+  document.getElementById("info_alternatives_titel").style.visibility = "hidden";
+  document.getElementById("info_alternatives_content").style.visibility = "hidden";
+
+}
+else{
+  document.getElementById("info_general_titel").style.visibility = "visible";
+  document.getElementById("info_general_content").style.visibility = "visible";
+
+  document.getElementById("info_market_titel").style.visibility = "visible";
+  document.getElementById("info_market_content").style.visibility = "visible";
+
+  document.getElementById("info_recycling_titel").style.visibility = "visible";
+  document.getElementById("info_recycling_content").style.visibility = "visible";
+
+  document.getElementById("info_alternatives_titel").style.visibility = "visible";
+  document.getElementById("info_alternatives_content").style.visibility = "visible";
+
+}
+}
+
+
 /// Konstante Überschriften
   // Selektiert die Reihen
   var allRows = data.split(/\r?\n|\r/);
@@ -62,7 +104,7 @@ function print_data(data){
   el('info_general_titel').innerHTML = titel[0];
   el('info_market_titel').innerHTML = titel[1];
   el('info_recycling_titel').innerHTML = titel[2];
-    el('info_alternatives_titel').innerHTML = titel[3];
+  el('info_alternatives_titel').innerHTML = titel[3];
 // Varibel Content
   // Der gewählte Eintrag
 
