@@ -4,8 +4,12 @@ launchmode = 1;
 
 //Variable
 var el = x => document.getElementById(x);
-var selection = 99 ;
 
+
+function set_selection()
+{
+selection = 99
+}
 
 function showPicker(inputId) { el('file-input').click();
 data_output("1_polyethylene_PE");
