@@ -9,11 +9,16 @@
 <body>
 <div>
     <div class='left'>
+      <div class='content'>
         <div class='title'>Plastic Classifier RIC</div>
-        <p>
-            In everyday life, plastic often seems to be just everywhere. This app is supposed to give some information about the plastics we use everyday. The Resin identification code (RIC)  is a symbol appearing on products which shows the resin the plastic is made of. The following classifier makes it possible to identify the plastic and to give some information about the environmental issues revolving around the classified plastic.
-        </p>
-        <div class='content'>
+        <div class='image_banner'>
+            <img src="images/square.jpg" height="350px"; align="left">
+        <!-- putting a div field behind the foto, so that it pops out, when picture is little.!-->
+            <p class='floating_p'>
+                In everyday life, plastic often seems to be just everywhere. This app is supposed to give some information about the plastics we use everyday. The Resin identification code (RIC)  is a symbol appearing on products which shows the resin the plastic is made of. The following classifier makes it possible to identify the plastic and to give some information about the environmental issues revolving around the classified plastic.
+              </p>
+          </div>
+
             <div class='no-display'>
                 <input id='file-input'
                        class='no-display'
@@ -22,9 +27,10 @@
                        accept='image/*'
                        onchange='showPicked(this)'>
             </div>
+
             <button class='choose-file-button' type='button' onclick='showPicker()'>Take Photo</button>
             <div class='upload-label'>
-                <label id='upload-label'>Click on 'Take Photo' to analyze a plastic label nearby.</label>
+                <label id='upload-label'>Click to choose a picture.</label>
             </div>
             <div>
                 <img id='image-picked' class='no-display' alt='Chosen Image' height=400em, width=auto>
@@ -61,5 +67,6 @@
             <div id= 'info_alternatives_content'class='info-alternatives'>
             </div>
           </div>
+        </div>
 </body>
 </html>

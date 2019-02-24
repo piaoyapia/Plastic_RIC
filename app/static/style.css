@@ -3,7 +3,7 @@
 
 body {
     background-color: #fff;
-    font-family:"Muli", serif;
+    font-family:"Muli", Arial serif;
 }
 
 .no-display {
@@ -20,7 +20,7 @@ body {
 }
 
 .title {
-    font-family: "Rock Salt", cursive;
+    font-family: "Rock Salt", Arial, cursive;
     font-weight: bold;
     text-align: left;
     font-size: 30px;
@@ -31,7 +31,6 @@ body {
 
 .content {
     text-align: center;
-    margin-top: 5em;
 }
 
 .analyze {
@@ -39,7 +38,7 @@ body {
 }
 
 .upload-label {
-    padding: 10px;
+    padding: 20px;
     font-size: 12px;
 }
 
@@ -49,12 +48,35 @@ body {
     font-size: 13px;
 }
 
+/* Image-Container */
+
+.image_banner{
+  height:350px;
+  width: auto;
+}
+
+.floating_p{
+  padding: 50px;
+  margin:0em;
+  height:250px;
+  float: left;
+  text-align: left;
+  width: 250px;
+  background-color:#e6f2ff
+}
+
+.text_banner{
+  padding:30px;
+  text-align: left;
+  background-color: #e6f2ff
+}
+
+
 /* Ausgabeinfos, später an csv binden */
 
 .info-general-titel{
-    font-family: "Rock Salt", cursive;
+    font-family: "Rock Salt", Arial, cursive;
     font-weight: bold;
-    padding: 40px;
     margin-top: 0.5em;
     background-color: #0073e6
 
@@ -63,13 +85,11 @@ body {
     padding: 20px;
     padding-bottom: 40px;
     background-color: #0073e6
-
 }
 
 .info-market-titel{
     font-family: "Rock Salt", cursive;
     font-weight: bold;
-    padding: 40px;
     margin-top: 0.5em;
     background-color: #4da6ff
 }
@@ -81,9 +101,8 @@ body {
 }
 
 .info-recycling-titel{
-    font-family: "Rock Salt", cursive;
+    font-family: "Rock Salt", Arial, cursive;
     font-weight: bold;
-    padding: 40px;
     margin-top: 0.5em;
     background-color:#b3d9ff
 }
@@ -95,9 +114,8 @@ body {
 }
 
 .info-alternatives-titel{
-    font-family: "Rock Salt", cursive;
+    font-family: "Rock Salt", Arial, cursive;
     font-weight: bold;
-    padding: 40px;
     margin-top: 0.5em;
     background-color: #e6f2ff
 }
@@ -111,6 +129,7 @@ body {
 /* Ende */
 
 button.choose-file-button {
+  margin-top:300px;
   width: 200px;
   height: 40px;
   border-radius: 2px;
@@ -121,7 +140,7 @@ button.choose-file-button {
 }
 
 button.analyze-button {
-    font: "Muli", serif;
+    font: "Muli", Arial, serif;
     width: 200px;
     height: 40px;
     border: solid 1px #ffbf00;
