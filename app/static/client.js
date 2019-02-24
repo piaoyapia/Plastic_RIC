@@ -89,35 +89,3 @@ if(selection != 99){
   el('info_alternatives_content').innerHTML = content[3];
 }
 }
-
-//Don't show without Result
-if(launchmode != 0){
-if(selection = 99){
-  document.getElementById("info_general_titel").style.visibility = "hidden";
-  document.getElementById("info_general_content").style.visibility = "hidden";
-
-  document.getElementById("info_market_titel").style.visibility = "hidden";
-  document.getElementById("info_market_content").style.visibility = "hidden";
-
-  document.getElementById("info_recycling_titel").style.visibility = "hidden";
-  document.getElementById("info_recycling_content").style.visibility = "hidden";
-
-  document.getElementById("info_alternatives_titel").style.visibility = "hidden";
-  document.getElementById("info_alternatives_content").style.visibility = "hidden";
-
-}
-else{
-  document.getElementById("info_general_titel").style.visibility = "visible";
-  document.getElementById("info_general_content").style.visibility = "visible";
-
-  document.getElementById("info_market_titel").style.visibility = "visible";
-  document.getElementById("info_market_content").style.visibility = "visible";
-
-  document.getElementById("info_recycling_titel").style.visibility = "visible";
-  document.getElementById("info_recycling_content").style.visibility = "visible";
-
-  document.getElementById("info_alternatives_titel").style.visibility = "visible";
-  document.getElementById("info_alternatives_content").style.visibility = "visible";
-
-}
-}
