@@ -8,6 +8,14 @@ body {
 
 .no-display {
     display: none;
+
+    // das ist neu:
+       padding: 50px;
+       margin:0em;
+       height:250px;
+       float: left;
+       width: 250px;
+       background-color:#e6f2ff
 }
 
 .left {
@@ -30,16 +38,17 @@ body {
 }
 
 .content {
-    text-align: center;
+    text-align: left;
 }
 
 .analyze {
-    margin-top: 5em;
+    margin-top: 0em;
 }
 
 .upload-label {
-    padding: 20px;
+    padding: 50px;
     font-size: 12px;
+
 }
 
 .result-label {
@@ -60,7 +69,6 @@ body {
   margin:0em;
   height:250px;
   float: left;
-  text-align: left;
   width: 250px;
   background-color:#e6f2ff
 }
@@ -129,20 +137,23 @@ body {
 /* Ende */
 
 button.choose-file-button {
-  margin-top:20px;
-  width: 200px;
-  height: 40px;
+  width: 350px;
+  height: 350px;
   border-radius: 2px;
   background-color: #ffffff;
   border: solid 1px #ffbf00;
   font-size: 13px;
   color: #ffbf00;
+
+  // das ist neu:
+      margin:0em;
+      float: left;
 }
 
 button.analyze-button {
     font: "Muli", Arial, serif;
-    width: 200px;
-    height: 40px;
+    width: 350px;
+    height: 350px;
     border: solid 1px #ffbf00;
     border-radius: 2px;
     background-color: #ffbf00;
