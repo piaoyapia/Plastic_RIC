@@ -24,26 +24,30 @@
         <div class='no-display'>
           <input id='file-input' class='no-display' type='file' name='file' accept='image/*' onchange='showPicked(this)'>
         </div>
+
         <button class='choose-file-button' type='button' onclick='showPicker()'>Take Photo
           <div class='upload-label'>
             <label id='upload-label'>Click to choose a picture.</label>
           </div>
-          <div>
         </button>
+
+      <div>
         <img id='image-picked' class='no-display' alt='Chosen Image' height=350px, width=auto>
       </div>
 
       <div class='analyze'>
-        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze
 
         <div class='result-label'>
           <label id='result-label'></label>
+
         </div>
 
 
 
 
       </div>
+      </button>
 
       <!-- Oben gut, unten schlecht !-->
 
@@ -65,7 +69,6 @@
       </div>
 
       <div id='info_recycling_content' class='info-text' style="background-color:#b3d9ff">
-
       </div>
 
       <div id='info_alternatives_titel' class='info-titel' style="background-color:#e6f2ff">
@@ -73,6 +76,7 @@
 
       <div id='info_alternatives_content' class='info-text' style="background-color:#e6f2ff">
       </div>
+
     </div>
   </div>
 </body>
