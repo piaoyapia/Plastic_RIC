@@ -8,8 +8,7 @@
 
 </head>
 
-<body onload="set_selection()">
-  <div>
+<body>
     <div class='left'>
       <div class='content'>
         <div class='title'>Plastic Classifier RIC</div>
@@ -36,56 +35,45 @@
 
       <div class='analyze'>
         <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+
+        <div class='result-label'>
+          <label id='result-label'></label>
+        </div>
+
+
+
+
       </div>
 
       <!-- Oben gut, unten schlecht !-->
-      <div class='result-label'>
-        <label id='result-label'></label>
+
+
+
+      <div id='info_general_titel' class='info-titel'  style="background-color:#0073e6">
       </div>
 
-
-      <div id='info_general_titel' class='info-titel'>
+      <div id='info_general_content' class='info-text' style="background-color:#0073e6">
       </div>
 
-      <div id='info_general_content' class='info-text'>
+      <div id='info_market_titel' class='info-titel' style="background-color:#4da6ff">
       </div>
 
-
-
-
-
-
-
-      <!--
-
-            <div id='info_general_titel'class='info-general-titel'>
-            </div>
-
-            <div id='info_general_content'class='info-general'>
-            </div>
-
-            !-->
-
-      <div id='info_market_titel' class='info-market-titel'>
+      <div id='info_market_content' class='info-text' style="background-color:#4da6ff">
       </div>
 
-      <div id='info_market_content' class='info-market'>
+      <div id='info_recycling_titel' class='info-titel' style="background-color:#b3d9ff">
       </div>
 
-      <div id='info_recycling_titel' class='info-recycling-titel'>
-      </div>
-
-      <div id='info_recycling_content' class='info-recycling'>
+      <div id='info_recycling_content' class='info-text' style="background-color:#b3d9ff">
 
       </div>
 
-      <div id='info_alternatives_titel' class='info-alternatives-titel'>
+      <div id='info_alternatives_titel' class='info-titel' style="background-color:#e6f2ff">
       </div>
 
-      <div id='info_alternatives_content' class='info-alternatives'>
+      <div id='info_alternatives_content' class='info-text' style="background-color:#e6f2ff">
       </div>
     </div>
-  </div>
   </div>
 </body>
 
