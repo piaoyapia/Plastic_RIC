@@ -1,4 +1,15 @@
+//Constant
+// 0 = Debug Mode 1 = Launchmode
+launchmode = 1;
+
+//Variable
 var el = x => document.getElementById(x);
+
+
+function set_selection()
+{
+selection = 1;
+}
 
 function showPicker(inputId) { el('file-input').click();
 data_output("1_polyethylene_PE");
@@ -27,7 +38,9 @@ function analyze() {
         if (this.readyState === 4) {
             var response = JSON.parse(e.target.responseText);
             el('result-label').innerHTML = `Result = ${response['result']}`;
-
+            var response_for_selection = `${response['result']}`;
+            var split = response_for_selection.split("_",1);
+            selection = split[0];
         }
         el('analyze-button').innerHTML = 'Analyse';
     }
@@ -52,7 +65,8 @@ $.ajax({
 //successFunction
 
 function print_data(data){
-    var selection = 3 ;
+
+if(selection != 99){
 /// Konstante Überschriften
   // Selektiert die Reihen
   var allRows = data.split(/\r?\n|\r/);
@@ -62,7 +76,7 @@ function print_data(data){
   el('info_general_titel').innerHTML = titel[0];
   el('info_market_titel').innerHTML = titel[1];
   el('info_recycling_titel').innerHTML = titel[2];
-    el('info_alternatives_titel').innerHTML = titel[3];
+  el('info_alternatives_titel').innerHTML = titel[3];
 // Varibel Content
   // Der gewählte Eintrag
 
@@ -73,5 +87,5 @@ function print_data(data){
   el('info_market_content').innerHTML = content[1];
   el('info_recycling_content').innerHTML = content[2];
   el('info_alternatives_content').innerHTML = content[3];
-
+}
 }
