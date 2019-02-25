@@ -1,49 +1,62 @@
 <html lang='en'>
+
 <head>
-    <meta charset='utf-8'>
-    <link rel='stylesheet' href='../static/style.css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src='../static/client.js'></script>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' href='../static/style.css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src='../static/client.js'></script>
 
 </head>
+
 <body>
   <div>
     <div class='left'>
       <div class='content'>
         <div class='title'>Plastic Classifier RIC</div>
         <div class='image_banner'>
-            <img src="https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/view/square.JPG?fbclid=IwAR37wDdgmYbOGdW7oOYJPfdkFui5s-GMvQSamlXdkG31sxKW7Tfwh1FUzdc" height="350px"; align="left">
-        <!-- putting a div field behind the foto, so that it pops out, when picture is little.!-->
-            <p class='floating_p'>
-                In everyday life, plastic often seems to be just everywhere. This app is supposed to give some information about the plastics we use everyday. The Resin identification code (RIC)  is a symbol appearing on products which shows the resin the plastic is made of. The following classifier makes it possible to identify the plastic and to give some information about the environmental issues revolving around the classified plastic.
-              </p>
+          <img src="https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/view/square.JPG?fbclid=IwAR37wDdgmYbOGdW7oOYJPfdkFui5s-GMvQSamlXdkG31sxKW7Tfwh1FUzdc" height="350px" ; align="left">
+          <!-- putting a div field behind the foto, so that it pops out, when picture is little.!-->
+          <p class='floating_p'>
+            In everyday life, plastic often seems to be just everywhere. This app is supposed to give some information about the plastics we use everyday. The Resin identification code (RIC) is a symbol appearing on products which shows the resin
+            the plastic is made of. The following classifier makes it possible to identify the plastic and to give some information about the environmental issues revolving around the classified plastic.
+          </p>
+        </div>
+
+        <div class='no-display'>
+          <input id='file-input' class='no-display' type='file' name='file' accept='image/*' onchange='showPicked(this)'>
+        </div>
+        <button class='choose-file-button' type='button' onclick='showPicker()'>Take Photo
+          <div class='upload-label'>
+            <label id='upload-label'>Click to choose a picture.</label>
           </div>
+          <div>
+        </button>
+        <img id='image-picked' class='no-display' alt='Chosen Image' height=350px, width=auto>
+      </div>
 
-            <div class='no-display'>
-                <input id='file-input'
-                       class='no-display'
-                       type='file'
-                       name='file'
-                       accept='image/*'
-                       onchange='showPicked(this)'>
-            </div>
-            <button class='choose-file-button' type='button' onclick='showPicker()'>Take Photo
-              <div class='upload-label'>
-                  <label id='upload-label'>Click to choose a picture.</label>
-              </div>
-              <div>
-            </button>
-                <img id='image-picked' class='no-display' alt='Chosen Image' height=350px, width=auto>
-            </div>
+      <div class='analyze'>
+        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+      </div>
 
-            <div class='analyze'>
-                <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
-            </div>
+      <!-- Oben gut, unten schlecht !-->
+      <div class='result-label'>
+        <label id='result-label'></label>
+      </div>
 
-          <!-- Oben gut, unten schlecht !-->
-            <div class='result-label'>
-                <label id='result-label'></label>
-            </div>
+
+      <div id='info_general_titel' class='info-titel'>
+      </div>
+
+      <div id='info_general_content' class='info-text'>
+      </div>
+
+
+
+
+
+
+
+      <!--
 
             <div id='info_general_titel'class='info-general-titel'>
             </div>
@@ -51,26 +64,29 @@
             <div id='info_general_content'class='info-general'>
             </div>
 
-            <div id='info_market_titel'class='info-market-titel'>
-            </div>
+            !-->
 
-            <div id='info_market_content' class='info-market'>
-            </div>
+      <div id='info_market_titel' class='info-market-titel'>
+      </div>
 
-            <div id='info_recycling_titel'class='info-recycling-titel'>
-            </div>
+      <div id='info_market_content' class='info-market'>
+      </div>
 
-            <div id='info_recycling_content'class='info-recycling'>
+      <div id='info_recycling_titel' class='info-recycling-titel'>
+      </div>
 
-            </div>
+      <div id='info_recycling_content' class='info-recycling'>
 
-            <div id='info_alternatives_titel'class='info-alternatives-titel'>
-            </div>
+      </div>
 
-            <div id= 'info_alternatives_content'class='info-alternatives'>
-            </div>
-          </div>
-        </div>
+      <div id='info_alternatives_titel' class='info-alternatives-titel'>
+      </div>
+
+      <div id='info_alternatives_content' class='info-alternatives'>
+      </div>
     </div>
+  </div>
+  </div>
 </body>
+
 </html>

@@ -85,6 +85,31 @@ body {
 
 /* Ausgabeinfos, später an csv binden */
 
+.info-titel{
+  font-family: "Rock Salt", Arial, cursive;
+  font-weight: bold;
+  width: 250px;
+  height:250px;
+  font-size: 30px;
+  padding: 50px;
+  background-color: #0073e6
+
+}
+
+
+.info-text{
+  width: 250px;
+  height:250px;
+  padding: 50px;
+  float:left;
+  background-color: #0073e6
+}
+
+
+
+
+/* folgendes eventuell ersetzen:*/
+
 .info-general-titel{
     font-family: "Rock Salt", Arial, cursive;
     font-weight: bold;
