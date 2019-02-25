@@ -52,9 +52,12 @@ body {
 }
 
 .result-label {
-    margin-top: 0.5em;
+    /*margin-top: 0em;
     padding: 10px;
     font-size: 13px;
+     neu:*/
+    padding: 50px;
+    font-size: 12px;
 }
 
 /* Image-Container */
