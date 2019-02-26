@@ -55,8 +55,10 @@ body {
 
      neu:*/
      margin-top: 0em;
-    padding: 50px;
-    font-size: 12px;
+     width:250px;
+     height:250px;
+     padding: 50px;
+     font-size: 12px;
 }
 
 /* Image-Container */
