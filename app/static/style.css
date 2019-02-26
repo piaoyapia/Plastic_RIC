@@ -42,6 +42,8 @@ body {
 
 .analyze {
   margin-top: 0em;
+  float: left;
+
 }
 
 .upload-label {
@@ -50,11 +52,13 @@ body {
 }
 
 .result-label {
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   margin-top: 0em;
+  float: left;
   padding: 50px;
   font-size: 30px;
+  background-color: #000000;
 }
 
 /* Image-Container */
