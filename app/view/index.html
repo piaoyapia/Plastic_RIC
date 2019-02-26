@@ -9,39 +9,39 @@
 </head>
 
 <body>
-    <div class='left'>
-      <div class='content'>
-        <div class='title'>Plastic Classifier RIC</div>
-        <div class='image_banner'>
-          <img src="https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/view/square.JPG?fbclid=IwAR37wDdgmYbOGdW7oOYJPfdkFui5s-GMvQSamlXdkG31sxKW7Tfwh1FUzdc" height="350px" ; align="left">
-          <!-- putting a div field behind the foto, so that it pops out, when picture is little.!-->
-          <p class='floating_p'>
-            In everyday life, plastic often seems to be just everywhere. This app is supposed to give some information about the plastics we use everyday. The Resin identification code (RIC) is a symbol appearing on products which shows the resin
-            the plastic is made of. The following classifier makes it possible to identify the plastic and to give some information about the environmental issues revolving around the classified plastic.
-          </p>
-        </div>
+  <div class='left'>
+    <div class='content'>
+      <div class='title'>Plastic Classifier RIC</div>
+      <div class='image_banner'>
+        <img src="https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/view/square.JPG?fbclid=IwAR37wDdgmYbOGdW7oOYJPfdkFui5s-GMvQSamlXdkG31sxKW7Tfwh1FUzdc" height="350px" ; align="left">
+        <!-- putting a div field behind the foto, so that it pops out, when picture is little.!-->
+        <p class='floating_p'>
+          In everyday life, plastic often seems to be just everywhere. This app is supposed to give some information about the plastics we use everyday. The Resin identification code (RIC) is a symbol appearing on products which shows the resin
+          the plastic is made of. The following classifier makes it possible to identify the plastic and to give some information about the environmental issues revolving around the classified plastic.
+        </p>
+      </div>
 
-        <div class='no-display'>
-          <input id='file-input' class='no-display' type='file' name='file' accept='image/*' onchange='showPicked(this)'>
-        </div>
+      <div class='no-display'>
+        <input id='file-input' class='no-display' type='file' name='file' accept='image/*' onchange='showPicked(this)'>
+      </div>
 
-        <button class='choose-file-button' type='button' onclick='showPicker()'>Take Photo
-          <div class='upload-label'>
-            <label id='upload-label'>Click to choose a picture.</label>
-          </div>
-        </button>
+      <button class='choose-file-button' type='button' onclick='showPicker()'>Take Photo
+        <div class='upload-label'>
+          <label id='upload-label'>Click to choose a picture.</label>
+        </div>
+      </button>
 
       <div>
-        <img id='image-picked' class='no-display' alt='Chosen Image' height=350px, width=auto>
+        <img id='image-picked' class='no-display' alt='Chosen Image' height=350px, width=350px>
       </div>
 
       <div class='analyze'>
         <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze
 
-        <div class='result-label'>
-          <label id='result-label'></label>
+          <div class='result-label'>
+            <label id='result-label'></label>
 
-        </div>
+          </div>
 
       </div>
       </button>
@@ -49,29 +49,36 @@
       <!-- Oben gut, unten schlecht !-->
 
 
-
-      <div id='info_general_titel' class='info-titel'  style="background-color:#0073e6">
+      <div class='image_banner'>
+        <div id='info_general_titel' class='info-titel' style="background-color:#214E66">
+        </div>
+        <div id='info_general_content' class='info-text' style="background-color:#214E66">
+        </div>
       </div>
 
-      <div id='info_general_content' class='info-text' style="background-color:#0073e6">
+      <div class='image_banner'>
+        <div id='info_market_titel' class='info-titel' style="background-color:#07384F">
+        </div>
+
+        <div id='info_market_content' class='info-text' style="background-color:#07384F">
+        </div>
       </div>
 
-      <div id='info_market_titel' class='info-titel' style="background-color:#4da6ff">
+      <div class='image_banner'>
+        <div id='info_recycling_titel' class='info-titel' style="background-color:#6FA5B0">
+        </div>
+
+        <div id='info_recycling_content' class='info-text' style="background-color:#6FA5B0">
+        </div>
       </div>
 
-      <div id='info_market_content' class='info-text' style="background-color:#4da6ff">
-      </div>
+      <div class='image_banner'>
 
-      <div id='info_recycling_titel' class='info-titel' style="background-color:#b3d9ff">
-      </div>
+        <div id='info_alternatives_titel' class='info-titel' style="background-color:#B5E2ED">
+        </div>
 
-      <div id='info_recycling_content' class='info-text' style="background-color:#b3d9ff">
-      </div>
-
-      <div id='info_alternatives_titel' class='info-titel' style="background-color:#e6f2ff">
-      </div>
-
-      <div id='info_alternatives_content' class='info-text' style="background-color:#e6f2ff">
+        <div id='info_alternatives_content' class='info-text' style="background-color:#B5E2ED">
+        </div>
       </div>
 
     </div>
