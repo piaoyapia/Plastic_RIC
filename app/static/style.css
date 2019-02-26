@@ -2,134 +2,127 @@
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt');
 
 body {
-    background-color: #fff;
-    font-family:"Muli", Arial serif;
+  background-color: #fff;
+  font-family: "Muli", Arial serif;
 }
 
 .no-display {
-    display: none;
-
-    // das ist neu:
-       padding: 50px;
-       margin:0em;
-       height:auto;
-       float: left;
-       background-color:#e6f2ff;
+  display: none;
+  // das ist neu:
+  padding: 50px;
+  margin: 0em;
+  height: auto;
+  float: left;
+  background-color: #e6f2ff;
 }
 
-
 .left {
-    margin: auto;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 20px;
-    padding-bottom: 200px;
-    text-align: left;
-    font-size: 30px;
+  margin: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 200px;
+  text-align: left;
+  font-size: 30px;
 }
 
 .title {
-    font-family: "Rock Salt", Arial, cursive;
-    font-weight: bold;
-    text-align: left;
-    font-size: 48px;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    color: #594615;
+  font-family: "Rock Salt", Arial, cursive;
+  font-weight: bold;
+  text-align: left;
+  font-size: 48px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: #594615;
 }
 
 .content {
-    text-align: left;
+  text-align: left;
 }
 
 .analyze {
-    margin-top: 0em;
+  margin-top: 0em;
 }
 
 .upload-label {
-    padding: 50px;
-    font-size: 22px;
-
+  padding: 50px;
+  font-size: 22px;
 }
 
 .result-label {
-     margin-top: 0em;
-     padding: 50px;
-     font-size: 30px;
+  width: 600px;
+  height: 600px;
+  margin-top: 0em;
+  padding: 50px;
+  font-size: 30px;
 }
 
 /* Image-Container */
-
-.image_banner{
-  height:600px;
-  width: auto;
+.image_banner {
+  height: 600px;
 }
 
-.floating_p{
+.floating_p {
   padding: 50px;
-  margin:0em;
+  margin: 0em;
   float: left;
   width: 500px;
   height: 500px;
-  color: #594615;
-  background-color:#F3E13C;
+  background-color: #F3E13C;
 }
 
-.text_banner{
-  padding:30px;
-  width:600px;
+.text_banner {
+  padding: 30px;
+  width: 600px;
   text-align: left;
   background-color: #D6AE16;
 }
 
-
 /* Ausgabeinfos, später an csv binden */
-
-.info-titel{
-  margin:0px;
+.info-titel {
+  margin: 0px;
   font-family: "Rock Salt", Arial, cursive;
   font-weight: bold;
   width: 500px;
-  height:500px;
+  height: 500px;
   padding: 50px;
   float: left;
 }
 
-.info-text{
+.info-text {
   width: 500px;
-  height:500px;
+  height: 500px;
   padding: 50px;
-  float:left;
+  float: left;
 }
-/* Ende */
 
+/* Ende */
 button.choose-file-button {
   font: "Muli", Arial, serif;
   width: 600px;
   height: 600px;
-  border-radius: 0px;
   background-color: #ffffff;
   border: solid 1px #8A6117;
   font-size: 30px;
   color: #8A6117;
-
   // das ist neu:
-      margin:0em;
-      float: left;
+  margin: 0em;
+  float: left;
 }
 
 button.analyze-button {
-    font: "Muli", Arial, serif;
-    width: 600px;
-    height: 600px;
-    border: solid 1px #D6AE16;
-    border-radius: 0px;
-    background-color: #D6AE16;
-    font-size: 30px;
-    color: #ffffff;
+  font: "Muli", Arial, serif;
+  width: 600px;
+  height: 600px;
+  border: solid 1px #D6AE16;
+  background-color: #D6AE16;
+  font-size: 30px;
+  color: #ffffff;
 }
 
-button:focus {outline:0;}
+button:focus {
+  outline: 0;
+}
 
 table {
   margin: 0 auto;
