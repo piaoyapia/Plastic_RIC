@@ -72,13 +72,13 @@ body {
   height:250px;
   float: left;
   width: 250px;
-  background-color:#e6f2ff
+  background-color:#E8DC70
 }
 
 .text_banner{
   padding:30px;
   text-align: left;
-  background-color: #e6f2ff
+  background-color: #FFD371
 }
 
 
@@ -107,9 +107,9 @@ button.choose-file-button {
   height: 350px;
   border-radius: 2px;
   background-color: #ffffff;
-  border: solid 1px #ffbf00;
+  border: solid 1px #FFC03D;
   font-size: 13px;
-  color: #ffbf00;
+  color: #FFC03D;
 
   // das ist neu:
       margin:0em;
@@ -120,9 +120,9 @@ button.analyze-button {
     font: "Muli", Arial, serif;
     width: 350px;
     height: 350px;
-    border: solid 1px #ffbf00;
+    border: solid 1px #FFC03D;
     border-radius: 2px;
-    background-color: #ffbf00;
+    background-color: #FFC03D;
     font-size: 13px;
     color: #ffffff;
 }
