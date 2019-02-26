@@ -12,12 +12,13 @@ body {
     // das ist neu:
        padding: 50px;
        margin:0em;
-       width: 600px;
        height:auto;
        float: left;
-
-       background-color:#e6f2ff
+       background-color:#e6f2ff;
+       width:600px;
+       height:600px;
 }
+
 
 .left {
     margin: auto;
