@@ -42,7 +42,6 @@ body {
 
 .analyze {
   margin-top: 0em;
-  float: left;
 }
 
 .upload-label {
@@ -56,7 +55,6 @@ body {
   margin-top: 0em;
   padding: 50px;
   font-size: 30px;
-  float: left;
 }
 
 /* Image-Container */
