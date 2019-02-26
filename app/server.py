@@ -11,7 +11,7 @@ from fastai.vision import *
 export_file_url = 'https://drive.google.com/uc?export=download&id=1sssFZ3CoTZqkVtAwjFfFM62cS9l87DSI'
 export_file_name = 'export_plastics.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['1_polyethylene_PET', '2_high_density_polyethylene_PE-HD', '3_polyvinylchloride_PVC', '4_low_density_polyethylene_PE-LD', '5_polypropylene_PP','6_polystyrene_PS', '7_other_resins' ]
 path = Path(__file__).parent
 
 app = Starlette()
