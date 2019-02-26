@@ -12,7 +12,7 @@ body {
     // das ist neu:
        padding: 50px;
        margin:0em;
-       width: 250px;
+       width: 450px;
        height:auto;
        float: left;
 
@@ -61,7 +61,7 @@ body {
 /* Image-Container */
 
 .image_banner{
-  height:350px;
+  height:450px;
   width: auto;
 }
 
@@ -69,14 +69,15 @@ body {
   padding: 50px;
   margin:0em;
   float: left;
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   color: #594615;
   background-color:#F3E13C;
 }
 
 .text_banner{
   padding:30px;
+  width:450px;
   text-align: left;
   background-color: #D6AE16;
 }
@@ -88,15 +89,15 @@ body {
   margin:0px;
   font-family: "Rock Salt", Arial, cursive;
   font-weight: bold;
-  width: 250px;
-  height:250px;
+  width: 350px;
+  height:350px;
   padding: 50px;
   float: left;
 }
 
 .info-text{
-  width: 250px;
-  height:250px;
+  width: 350px;
+  height:350px;
   padding: 50px;
   float:left;
 }
@@ -104,8 +105,8 @@ body {
 
 button.choose-file-button {
   font: "Muli", Arial, serif;
-  width: 350px;
-  height: 350px;
+  width: 450px;
+  height: 450px;
   border-radius: 0px;
   background-color: #ffffff;
   border: solid 1px #8A6117;
@@ -119,8 +120,8 @@ button.choose-file-button {
 
 button.analyze-button {
     font: "Muli", Arial, serif;
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
     border: solid 1px #D6AE16;
     border-radius: 0px;
     background-color: #D6AE16;
