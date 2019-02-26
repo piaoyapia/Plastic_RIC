@@ -1,6 +1,6 @@
 //Constant
 // 0 = Debug Mode 1 = Launchmode
-launchmode = 0;
+launchmode = 1;
 
 //Variable
 var el = x => document.getElementById(x);
