@@ -12,9 +12,10 @@ body {
     // das ist neu:
        padding: 50px;
        margin:0em;
-       height:250px;
-       float: left;
        width: 250px;
+       height:auto;
+       float: left;
+
        background-color:#e6f2ff
 }
 
@@ -52,8 +53,6 @@ body {
 }
 
 .result-label {
-
-     neu:*/
      margin-top: 0em;
      padding: 50px;
      font-size: 12px;
@@ -107,7 +106,7 @@ button.choose-file-button {
   font: "Muli", Arial, serif;
   width: 350px;
   height: 350px;
-  border-radius: 2px;
+  border-radius: 0px;
   background-color: #ffffff;
   border: solid 1px #8A6117;
   font-size: 18px;
@@ -123,7 +122,7 @@ button.analyze-button {
     width: 350px;
     height: 350px;
     border: solid 1px #D6AE16;
-    border-radius: 2px;
+    border-radius: 0px;
     background-color: #D6AE16;
     font-size: 18px;
     color: #ffffff;
