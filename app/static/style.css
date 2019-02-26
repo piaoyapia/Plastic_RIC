@@ -61,6 +61,7 @@ body {
 /* Image-Container */
 
 .image_banner{
+  align-self: left;
   height:600px;
   width: auto;
 }
