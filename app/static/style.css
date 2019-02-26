@@ -21,9 +21,10 @@ body {
 
 .left {
     margin: auto;
-    padding: 10px;
-    padding-left:50px;
-    padding-right:50px;
+    padding-left: 135px;
+    padding-right: 135px;
+    padding-top: 20px;
+    padding-bottom: 200px;
     text-align: left;
     font-size: 30px;
 }
