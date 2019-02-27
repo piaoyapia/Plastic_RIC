@@ -37,12 +37,10 @@ function analyze() {
     xhr.onload = function(e) {
         if (this.readyState === 4) {
             var response = JSON.parse(e.target.responseText);
-            el('result-label').innerHTML = `Result = ${response['result']}`;
-
+            el('result-label').innerHTML = `The code on the picture stands for = ${response['result']}`;
             var response_for_selection = `${response['result']}`;
             var split = response_for_selection.split("_",1);
             selection = split[0];
-            update_text();
         }
         el('analyze-button').innerHTML = 'Analyse';
     }
@@ -67,14 +65,11 @@ $.ajax({
 //successFunction
 
 function print_data(data){
-all_data = data;
-}
 
-function update_text(){
 if(selection != 99){
 /// Konstante Überschriften
   // Selektiert die Reihen
-  var allRows = all_data.split(/\r?\n|\r/);
+  var allRows = data.split(/\r?\n|\r/);
   // Teilt die erste Zeile
   var titel = allRows[0].split('§');
   // Wählt den ersten Eintrag der Ersten Zeile und schreibt in HTML
