@@ -96,6 +96,6 @@ if(selection != 99){
   el('info_alternatives_content').innerHTML = content[3];
 
   //Update label needed for analysis:
-  el('result-label').innerHTML = `${'The identified Plastic is ' + titel[0]}`;
+  el('result-label').innerHTML = `${'The identified Plastic is ' + content[0]}`;
 }
 }
