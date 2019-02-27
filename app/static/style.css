@@ -5,7 +5,7 @@ body {
   background-color: #fff;
   font-family: "Muli", Arial serif;
   width:2000px;
-  height:4500px;
+  height:4000px;
 }
 
 .no-display {
@@ -41,7 +41,6 @@ body {
 .analyze {
   margin-top: 0em;
   float: left;
-
 }
 
 .upload-label {
@@ -51,18 +50,18 @@ body {
 
 .result-label {
   font-family: "Rock Salt", Arial, cursive;
-  width: 500px;
-  height: 500px;
+  color: #ABCBED;
+  width: 400px;
+  height: 400px;
   margin-top: 0em;
   float: left;
-  padding: 50px;
-  font-size: 30px;
-
+  padding: 100px;
+  font-size: 40px;
 }
 
 /* Image-Container */
 .image_banner {
-  height: 600px;
+  height:600px;
   float:left;
 }
 
@@ -83,7 +82,12 @@ body {
 }
 
 /* Ausgabeinfos, später an csv binden */
-.info-titel {
+.info-box{
+  height:600px;
+  float:left;
+}
+
+.info-title {
   margin: 0px;
   font-family: "Rock Salt", Arial, cursive;
   font-weight: bold;
@@ -107,7 +111,7 @@ button.choose-file-button {
   height: 600px;
   background-color: #ffffff;
   border: solid 1px #8A6117;
-  font-size: 30px;
+  font-size: 40px;
   color: #8A6117;
   // das ist neu:
   margin: 0em;
@@ -120,7 +124,7 @@ button.analyze-button {
   height: 600px;
   border: solid 1px #D6AE16;
   background-color: #D6AE16;
-  font-size: 30px;
+  font-size: 40px;
   color: #ffffff;
 }
 
