@@ -37,7 +37,8 @@ function analyze() {
     xhr.onload = function(e) {
         if (this.readyState === 4) {
             var response = JSON.parse(e.target.responseText);
-            el('result-label').innerHTML = chooseResult(`${response['result']}`);
+            result = `${response['result']}`;
+            el('result-label').innerHTML = chooseResult(result);
 
             var response_for_selection = `${response['result']}`;
             var split = response_for_selection.split("_",1);
