@@ -37,15 +37,8 @@ function analyze() {
     xhr.onload = function(e) {
         if (this.readyState === 4) {
             var response = JSON.parse(e.target.responseText);
-            var label_result = `${response['result']}`;
 
-            var plastics_origin= ["1_polyethylene_PET", "2_high_density_polyethylene_PE-HD", "3_polyvinylchloride_PVC","4_low_density_polyethylene_PE-LD", "5_polypropylene_PP","6_polystyrene_PS", "7_other_resins"];
-            var pos=plastics_origin.indexOf('label_result');
-
-            var plastics= ["PET", "PE-HD", "PVC", "PE-LD", "PP","PS", "other resins"];
-
-
-            el('result-label').innerHTML = `${'The identified Plastic is ' + pos}`;
+            el('result-label').innerHTML = `${'The identified Plastic is ' + response['result']}`;
 
             var response_for_selection = `${response['result']}`;
             var split = response_for_selection.split("_",1);
@@ -60,16 +53,6 @@ function analyze() {
     xhr.send(fileData);
 }
 
-//neu:
-
-function chooseResult(label_result){
-  var plastics_origin= ['1_polyethylene_PET', '2_high_density_polyethylene_PE-HD', '3_polyvinylchloride_PVC', '4_low_density_polyethylene_PE-LD', '5_polypropylene_PP','6_polystyrene_PS', '7_other_resins'];
-  var pos=plastics_origin.indexOf('label_result');
-
-  var plastics= ['PET', 'PE-HD', 'PVC', 'PE-LD', 'PP','PS', 'other resins'];
-  return "The identified Plastic is " + plastics[pos];
-}
-//neu Ende
 
 
 function data_output(selected){
@@ -111,5 +94,8 @@ if(selection != 99){
   el('info_market_content').innerHTML = content[1];
   el('info_recycling_content').innerHTML = content[2];
   el('info_alternatives_content').innerHTML = content[3];
+
+  //Update label needed for analysis:
+  el('result-label').innerHTML = `${'The identified Plastic is ' + titel[0]}`;
 }
 }
