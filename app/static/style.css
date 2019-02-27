@@ -4,6 +4,7 @@
 body {
   background-color: #fff;
   font-family: "Muli", Arial serif;
+  height:4500px;
 }
 
 .no-display {
@@ -12,18 +13,17 @@ body {
   padding: 50px;
   margin: 0em;
   height: auto;
-  float: left;
   background-color: #e6f2ff;
 }
 
-.left {
+.content {
   margin: auto;
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 20px;
   padding-bottom: 200px;
-  text-align: left;
   font-size: 30px;
+  align-items: left;
 }
 
 .title {
@@ -36,9 +36,6 @@ body {
   color: #594615;
 }
 
-.content {
-  text-align: left;
-}
 
 .analyze {
   margin-top: 0em;
@@ -69,9 +66,9 @@ body {
 }
 
 .floating_p {
+  float:left;
   padding: 50px;
   margin: 0em;
-  float: left;
   width: 500px;
   height: 500px;
   background-color: #F3E13C;
