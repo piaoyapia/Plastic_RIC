@@ -38,7 +38,7 @@ function analyze() {
         if (this.readyState === 4) {
             var response = JSON.parse(e.target.responseText);
             result= `${response['result']}`;
-            el('result-label').innerHTML = chooseResult('result');
+            el('result-label').innerHTML = string(chooseResult('result'));
 
             var response_for_selection = `${response['result']}`;
             var split = response_for_selection.split("_",1);
