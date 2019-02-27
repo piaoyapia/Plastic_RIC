@@ -38,7 +38,7 @@ function analyze() {
         if (this.readyState === 4) {
             var response = JSON.parse(e.target.responseText);
             result= `${response['result']}`;
-            el('result-label').innerHTML = string(chooseResult('result'));
+            el('result-label').innerHTML = chooseResult(result);
 
             var response_for_selection = `${response['result']}`;
             var split = response_for_selection.split("_",1);
@@ -60,7 +60,7 @@ function chooseResult(result){
   var pos=plastics_origin.indexOf('result');
 
   var plastics= ['PET', 'PE-HD', 'PVC', 'PE-LD', 'PP','PS', 'other resins'];
-  return plastics[pos];
+  return "The identified Plastic is" + plastics[pos];
 }
 //neu Ende
 
