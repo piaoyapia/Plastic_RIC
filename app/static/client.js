@@ -37,7 +37,9 @@ function analyze() {
     xhr.onload = function(e) {
         if (this.readyState === 4) {
             var response = JSON.parse(e.target.responseText);
-            el('result-label').innerHTML = `The code on the picture stands for = ${response['result']}`;
+            el('result-label').innerHTML = `The code on the picture stands for = ${response[chooseResult('result')]}`;
+
+
             var response_for_selection = `${response['result']}`;
             var split = response_for_selection.split("_",1);
             selection = split[0];
@@ -49,6 +51,17 @@ function analyze() {
     fileData.append('file', uploadFiles[0]);
     xhr.send(fileData);
 }
+
+//neu:
+
+function chooseResult(result){
+  var plastics_origin= ['1_polyethylene_PET', '2_high_density_polyethylene_PE-HD', '3_polyvinylchloride_PVC', '4_low_density_polyethylene_PE-LD', '5_polypropylene_PP','6_polystyrene_PS', '7_other_resins'];
+  var pos=plastics_origin.indexOf('result');
+
+  var plastics= ['PET', 'PE-HD', 'PVC', 'PE-LD', 'PP','PS', 'other resins'];
+  return=plastics[pos];
+}
+//neu Ende
 
 
 function data_output(selected){
