@@ -45,7 +45,7 @@ function analyze() {
             var plastics= ['PET', 'PE-HD', 'PVC', 'PE-LD', 'PP','PS', 'other resins'];
 
 
-            el('result-label').innerHTML = `${"The identified Plastic is " + plastics[pos];}`;
+            el('result-label').innerHTML = `${"The identified Plastic is " + plastics[pos]}`;
 
             var response_for_selection = `${response['result']}`;
             var split = response_for_selection.split("_",1);
