@@ -65,6 +65,7 @@ body {
 /* Image-Container */
 .image_banner {
   height: 600px;
+  float:left;
 }
 
 .floating_p {
