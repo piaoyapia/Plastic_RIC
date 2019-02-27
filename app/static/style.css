@@ -52,6 +52,7 @@ body {
 }
 
 .result-label {
+  font-family: "Rock Salt", Arial, cursive;
   width: 500px;
   height: 500px;
   margin-top: 0em;
