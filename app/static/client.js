@@ -59,7 +59,7 @@ function chooseResult(result){
   var pos=plastics_origin.indexOf('result');
 
   var plastics= ['PET', 'PE-HD', 'PVC', 'PE-LD', 'PP','PS', 'other resins'];
-  return=plastics[pos];
+  return plastics[pos];
 }
 //neu Ende
 
