@@ -74,22 +74,23 @@ all_data = data;
 
 function update_text(){
 if(selection != 99){
-/// Konstante Überschriften
-  // Selektiert die Reihen
+/// constant titles --> csv headlines
+  // rows get selected
   var allRows = all_data.split(/\r?\n|\r/);
-  // Teilt die erste Zeile
-  var titel = allRows[0].split('§');
-  // Wählt den ersten Eintrag der Ersten Zeile und schreibt in HTML
-  el('info_general_titel').innerHTML = titel[0];
-  el('info_market_titel').innerHTML = titel[1];
-  el('info_recycling_titel').innerHTML = titel[2];
-  el('info_alternatives_titel').innerHTML = titel[3];
-// Varibel Content
-  // Der gewählte Eintrag
+  // Splits the first row
+  var title = allRows[0].split('§');
+  // Chooses the first/second/third/forth entry of the first row and writes it in HTML
+  el('info_general_title').innerHTML = title[0];
+  el('info_market_title').innerHTML = title[1];
+  el('info_recycling_title').innerHTML = title[2];
+  el('info_alternatives_title').innerHTML = title[3];
+  // <--- stays the same for every possible content.
 
-  // Splitte die Reihe des Eintrags
+
+  // The choosen content: Splits the rows of the entry:
   var content = allRows[selection].split('§');
-  //Wähle den ersten Eintrags
+  // Choose the first/second/third/forth column entry of the choosen row.
+  //Row gets choosen by the structure of the data.csv (4x4 table)
   el('info_general_content').innerHTML = content[0];
   el('info_market_content').innerHTML = content[1];
   el('info_recycling_content').innerHTML = content[2];
