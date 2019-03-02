@@ -46,6 +46,7 @@ function analyze() {
             update_text();
         }
         el('analyze-button').innerHTML = 'Analyse';
+
     }
 
     var fileData = new FormData();
@@ -98,5 +99,9 @@ if(selection != 99){
 
   //Update label needed for analysis:
   el('result-label').innerHTML = `${'The identified Plastic is ' + content[0]}`;
+
+ // Show Info-Blocks
+  el('info-box').style.visibility= "visible";
+
 }
 }
