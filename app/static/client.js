@@ -48,11 +48,11 @@ function analyze() {
             var split = response_for_selection.split("_",1);
             selection = split[0];
             update_text();
-            // try to show
-                    $('.info-box').show();
+
         }
         el('analyze-button').innerHTML = 'Analyse';
-
+        // try to show
+                $('.info-box').show();
 
     }
 
