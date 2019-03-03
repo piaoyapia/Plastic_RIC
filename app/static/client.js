@@ -4,15 +4,15 @@ launchmode = 1;
 
 //Variable
 var el = x => document.getElementById(x);
-
+//try to hide
+  $('.info-box').hide();
 
 
 function set_selection()
 {
 selection = 1;
 
-//try to hide
-  $('.info-box').hide();
+
 }
 
 function showPicker(inputId) { el('file-input').click();
@@ -48,11 +48,12 @@ function analyze() {
             var split = response_for_selection.split("_",1);
             selection = split[0];
             update_text();
+            // try to show
+                    $('.info-box').show();
 
         }
         el('analyze-button').innerHTML = 'Analyse';
-        // try to show
-                $('.info-box').show();
+
 
     }
 
