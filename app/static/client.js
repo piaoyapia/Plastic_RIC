@@ -7,15 +7,15 @@ var el = x => document.getElementById(x);
 
 
 
-
 function set_selection()
 {
 selection = 1;
 
+//try to hide
+  $('.info-box').hide();
 
-//at first: boxes hidden
 
-  document.getElementById('info-box').style.display= "none";
+
 
 
 
@@ -56,6 +56,8 @@ function analyze() {
             update_text();
         }
         el('analyze-button').innerHTML = 'Analyse';
+// try to show
+        $('.info-box').show();
 
     }
 
@@ -110,9 +112,7 @@ if(selection != 99){
   //Update label needed for analysis:
   el('result-label').innerHTML = `${'The identified Plastic is ' + content[0]}`;
 
- // Show Info-Blocks
 
-    document.getElementById('info-box').style.display= "";
 
 
 
