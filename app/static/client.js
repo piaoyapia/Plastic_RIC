@@ -11,7 +11,7 @@ function set_selection() {
   selection = 1;
 
   //try to hide
-  $('.info-box').hide();
+  $('.info-box').hide('slow');
 
 
 }
@@ -56,7 +56,7 @@ function analyze() {
     el('analyze-button').innerHTML = 'Analyse';
 
     // try to show
-    $('.info-box').show();
+    $('.info-box').show('slow');
 
 
   }
