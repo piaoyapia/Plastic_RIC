@@ -48,6 +48,8 @@ function analyze() {
             var split = response_for_selection.split("_",1);
             selection = split[0];
             update_text();
+            // try to show
+                    $('.info-box').show();
         }
         el('analyze-button').innerHTML = 'Analyse';
 
@@ -104,9 +106,6 @@ if(selection != 99){
 
   //Update label needed for analysis:
   el('result-label').innerHTML = `${'The identified Plastic is ' + content[0]}`;
-
-  // try to show
-          $('info-box').show();
 
 
 
