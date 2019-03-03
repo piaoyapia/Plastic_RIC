@@ -85,7 +85,6 @@ body {
 .info-box{
   height:600px;
   float:left;
-  visibility: hidden;
 }
 
 .info-title {

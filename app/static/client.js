@@ -6,9 +6,19 @@ launchmode = 1;
 var el = x => document.getElementById(x);
 
 
+
+
 function set_selection()
 {
 selection = 1;
+
+
+//at first: boxes hidden
+
+  document.getElementById('info-box').style.display= "none";
+
+
+
 }
 
 function showPicker(inputId) { el('file-input').click();
@@ -101,7 +111,10 @@ if(selection != 99){
   el('result-label').innerHTML = `${'The identified Plastic is ' + content[0]}`;
 
  // Show Info-Blocks
-  el('info-box').style.visibility= "visible";
+
+    document.getElementById('info-box').style.display= "";
+
+
 
 }
 }
