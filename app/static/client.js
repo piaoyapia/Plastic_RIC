@@ -106,7 +106,7 @@ if(selection != 99){
   el('result-label').innerHTML = `${'The identified Plastic is ' + content[0]}`;
 
   // try to show
-          $('.info-box').show();
+          $('info-box').show();
 
 
 
