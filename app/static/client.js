@@ -5,14 +5,14 @@ launchmode = 1;
 //Variable
 var el = x => document.getElementById(x);
 
+//try to hide
+  $('.info-box').hide();
+
 
 
 function set_selection()
 {
 selection = 1;
-
-//try to hide
-  $('.info-box').hide();
 }
 
 function showPicker(inputId) { el('file-input').click();
@@ -106,7 +106,7 @@ if(selection != 99){
   el('result-label').innerHTML = `${'The identified Plastic is ' + content[0]}`;
 
   // try to show
-          $('info-box').show();
+          $('.info-box').show();
 
 
 
