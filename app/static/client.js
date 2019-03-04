@@ -1,6 +1,6 @@
 //Constant
 // 0 = Debug Mode 1 = Launchmode
-launchmode = 1;
+launchmode = 0;
 
 //Variable
 var el = x => document.getElementById(x);
@@ -10,9 +10,10 @@ var el = x => document.getElementById(x);
 function set_selection() {
   selection = 1;
 
-  //try to hide
+  //hide, if the launchmode is on
+  if (launchmode == 1) {
   $('.info-box').hide();
-
+}
 
 }
 
