@@ -4,13 +4,15 @@
 body {
   background-color: #fff;
   font-family: "Muli", Arial serif;
-  width:2000px;
-  height:4000px;
+  width: 1500px;
+/* here: width defines, after how many segments it should break. (1500= 2 blocks)
+Later that can be changed with css media query.
+(To make it better suitable for all devices.) */
+  height: 4000px;
 }
 
 .no-display {
   display: none;
-  // das ist neu:
   padding: 50px;
   margin: 0em;
   height: auto;
@@ -37,7 +39,6 @@ body {
   color: #594615;
 }
 
-
 .analyze {
   margin-top: 0em;
   float: left;
@@ -60,15 +61,18 @@ body {
 }
 
 /* Image-Container */
+img {
+  float: left;
+}
+
 .image_banner {
-  height:600px;
-  float:left;
+  height: 600px;
+  float: left;
 }
 
 .floating_p {
-  float:left;
+  float: left;
   padding: 50px;
-  margin: 0em;
   width: 500px;
   height: 500px;
   background-color: #F3E13C;
@@ -82,9 +86,9 @@ body {
 }
 
 /* Ausgabeinfos, später an csv binden */
-.info-box{
-  height:600px;
-  float:left;
+.info-box {
+  height: 600px;
+  float: left;
 }
 
 .info-title {
@@ -113,8 +117,6 @@ button.choose-file-button {
   border: solid 1px #8A6117;
   font-size: 40px;
   color: #8A6117;
-  // das ist neu:
-  margin: 0em;
   float: left;
 }
 
