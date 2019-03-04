@@ -9,6 +9,7 @@ body {
 Later that can be changed with css media query.
 (To make it better suitable for all devices.) */
   height: 4000px;
+  padding: 75px;
 }
 
 .no-display {
@@ -20,13 +21,7 @@ Later that can be changed with css media query.
 }
 
 .content {
-  margin: auto;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 20px;
-  padding-bottom: 200px;
   font-size: 30px;
-  align-items: left;
 }
 
 .title {
