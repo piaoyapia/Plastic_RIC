@@ -12,9 +12,9 @@
 .square {
   position: relative;
   flex-basis: calc(33.333% - 10px);
-  width:30em;
-  height:30em;
-  margin: 5px;
+  width:60em;
+  height:60em;
+  margin: 10px;
   border: 2px solid;
   border-radius: 2px;
   color: #594615;
@@ -42,8 +42,8 @@ body {
 
 .title{
   font-family: "Rock Salt";
-  padding: 1em;
-  font-size: 2em;
+  padding: 2em;
+  font-size: 4em;
   font-weight: bold;
   color: #594615;
 }
@@ -52,7 +52,7 @@ body {
 .floating_p {
   font-family: 'Muli';
   background-color: #F3E13C;
-  font-size: 22px;
+  font-size: 44px;
   position: absolute;
   height: 85%;
   padding: 7.555%;
@@ -90,8 +90,8 @@ height:100%;
   height: 100%;
   margin-top: 0em;
   float: left;
-  padding: 50px;
-  font-size: 20px;
+  padding: 100px;
+  font-size: 40px;
 }
 
 .info-box {
@@ -108,7 +108,7 @@ height:100%;
 }
 
 .info-text {
-  font-size: 22px;
+  font-size: 44px;
   position: absolute;
   height: 85%;
   padding: 7.555%;
@@ -118,7 +118,7 @@ height:100%;
 button.choose-file-button {
   font: "Muli", Arial, serif;
   background-color: #ffffff;
-  font-size: 40px;
+  font-size: 80px;
   color: #8A6117;
   width: 100%;
   height: 100%;
@@ -130,7 +130,7 @@ button.analyze-button {
   height: 100%;
   border: solid 1px #D6AE16;
   background-color: #D6AE16;
-  font-size: 40px;
+  font-size: 80px;
   color: #ffffff;
 }
 
