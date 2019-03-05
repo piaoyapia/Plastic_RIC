@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt');
 
 
+
+
+
+
 /* Square stuff-----------------*/
 .square-container {
   display: block;
@@ -33,6 +37,12 @@
   height: 100%;
   width: 100%;
 }
+
+
+
+
+
+
 
 /* Content -----------------*/
 body {
@@ -85,13 +95,13 @@ height:100%;
 
 .result-label {
   font-family: "Muli", Arial, cursive;
-  color: #ABCBED;
+  color: #8A6117;
   width: 100%;
   height: 100%;
   margin-top: 0em;
   float: left;
   padding: 100px;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .info-box {
@@ -103,15 +113,14 @@ height:100%;
   font-weight: bold;
   width: 100%;
   height: 100%;
-  padding: 25px;
-  float: left;
 }
 
 .info-text {
   font-size: 44px;
   position: absolute;
-  height: 85%;
-  padding: 7.555%;
+  width:80%;
+  height: 80%;
+  padding: 10%;
 }
 
 /*---- Buttons and stuff */
@@ -158,24 +167,36 @@ th {
 }
 
 
+/* noch nicht ready: */
+@media (min-width: 80em) {
+  .square-container {
+    width: 1000px;
+    height:1000px;
+
+    display:   flex;
+    flex-wrap: wrap;
+    padding: 5em;
+  }
+  .square{
+    width: 300px;
+    height: 300px;
+  }
 
 
-
-
-
-
-/* wird bei allem kleiner als 50em angewendet: */
-aside {
-  /* nur Farb- und Hintergrundformatierungen */
-
+  .square .content {
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+  }
 
 
 
 }
 
 
+/* wird bei allem kleiner als 50em angewendet: */
+aside {
+  /* nur Farb- und Hintergrundformatierungen */
 
-  @media (min-width: 80em;) {
-
-
-  }
+}
