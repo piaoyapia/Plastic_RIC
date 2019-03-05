@@ -9,79 +9,130 @@
 </head>
 
 <body onload='set_selection()'>
-  <div class='content'>
+  <div class="square-container">
 
-    <div class='title'>Plastic Classifier RIC</div>
-
-
-    <!--Intro-Picture & Intro-text !-->
-
-
-      <img src="https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/view/square.JPG?fbclid=IwAR37wDdgmYbOGdW7oOYJPfdkFui5s-GMvQSamlXdkG31sxKW7Tfwh1FUzdc";></img>
-      <!-- putting a div field behind the foto, so that it pops out, when picture is little.!-->
-      <div class='floating_p'>
-        In everyday life, plastic often seems to be just everywhere. This app is supposed to give some information about the plastics we use everyday. The Resin identification code (RIC) is a symbol appearing on products which shows the resin
-        the plastic is made of. The following classifier makes it possible to identify the plastic and gives some information about the environmental issues revolving around the classified plastic.
+    <!-- 1 Heading !-->
+    <div class="square">
+      <div class="content">
+        <div class='title'>Plastic Classifier RIC</div>
       </div>
+    </div>
 
-
-
-    <!-- Pick picture & show picture !-->
-
-      <div class='no-display'>
-        <input id='file-input' class='no-display' type='file' name='file' accept='image/*' onchange='showPicked(this)'>
+    <!-- 2 Intro picture !-->
+    <div class="square">
+      <div class="content">
+        <img src="https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/view/square.JPG?fbclid=IwAR37wDdgmYbOGdW7oOYJPfdkFui5s-GMvQSamlXdkG31sxKW7Tfwh1FUzdc" ;></img>
       </div>
+    </div>
 
-      <button class='choose-file-button' type='button' onclick='showPicker()'>Take Photo
-        <div class='upload-label'>
-          <label id='upload-label'>Click to choose a picture.</label>
+    <!-- 3 Description of the site !-->
+    <div class="square">
+      <div class="content">
+        <div class=floating_p>
+          In everyday life, plastic often seems to be just everywhere. This app is supposed to give some information about the plastics we use everyday. The Resin identification code (RIC) is a symbol appearing on products which shows the resin
+          the plastic is made of. The following classifier makes it possible to identify the plastic and gives some information about the environmental issues revolving around the classified plastic.
         </div>
-      </button>
+      </div>
+    </div>
 
-      <img id='image-picked' class='no-display' alt='Chosen Image'></img>
+    <!-- 4 Take Photo !-->
+    <div class="square">
+      <div class="content column">
 
+        <div class='no-display'>
+          <input id='file-input' class='no-display' type='file' name='file' accept='image/*' onchange='showPicked(this)'>
+        </div>
 
-    <!--Analyze & show Analysis !-->
-
-
-      <div class='analyze'>
-        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze
+        <button class='choose-file-button' type='button' onclick='showPicker()'>Take Photo
+          <div class='upload-label'>
+            <label id='upload-label'>Click to choose a picture.</label>
+          </div>
         </button>
+
       </div>
+    </div>
 
-      <div class='result-label'>
-        <label id='result-label'></label>
+    <!-- 5 Choosen Photo !-->
+    <div class="square">
+      <div class="content spread">
+
+        <img id='image-picked' class='no-display' alt='Chosen Image'></img>
+
       </div>
+    </div>
+
+    <!-- 6 Analyze !-->
+    <div class="square">
+      <div class="content spread">
 
 
-    <!-- Show information about the analyzed plastic !-->
-
-
-
-      <div class='info-box'>
-        <div id='info_general_title' class='info-title' style="background-color:#214E66">
+        <div class='analyze'>
+          <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze
+          </button>
         </div>
-        <div id='info_general_content' class='info-text' style="background-color:#214E66">
-        </div>
+      </div>
+    </div>
 
-        <div id='info_market_title' class='info-title' style="background-color:#07384F">
-        </div>
-        <div id='info_market_content' class='info-text' style="background-color:#07384F">
-        </div>
-
-        <div id='info_recycling_title' class='info-title' style="background-color:#6FA5B0">
-        </div>
-        <div id='info_recycling_content' class='info-text' style="background-color:#6FA5B0">
-        </div>
-
-        <div id='info_alternatives_title' class='info-title' style="background-color:#B5E2ED">
-        </div>
-        <div id='info_alternatives_content' class='info-text' style="background-color:#B5E2ED">
+    <!-- 7 Show Analysis !----------------------------------------------------------->
+    <div class="square">
+      <div class="content spread">
+        <div class='result-label'>
+          <label id='result-label'></label>
         </div>
       </div>
     </div>
 
 
+    <!-- Info-Blocks !--------------------------------------------------------------->
+
+    <!-- Show information about the analyzed plastic !-->
+    <div class='info-box'>
+      <div class="square">
+        <div class="content column">
+
+
+          <div id='info_general_title' class='info-title' style="background-color:#214E66">
+          </div>
+          <div id='info_general_content' class='info-text' style="background-color:#214E66">
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="square">
+        <div class="content column">
+
+          <div id='info_market_title' class='info-title' style="background-color:#07384F">
+          </div>
+          <div id='info_market_content' class='info-text' style="background-color:#07384F">
+          </div>
+        </div>
+      </div>
+
+      <div class="square">
+        <div class="content column">
+          <div id='info_recycling_title' class='info-title' style="background-color:#6FA5B0">
+          </div>
+          <div id='info_recycling_content' class='info-text' style="background-color:#6FA5B0">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="square">
+        <div class="content column">
+          <div id='info_alternatives_title' class='info-title' style="background-color:#B5E2ED">
+          </div>
+          <div id='info_alternatives_content' class='info-text' style="background-color:#B5E2ED">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
 
 </body>
 
