@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
 /* Colors
@@ -8,9 +9,7 @@
 #B5E2ED
 */
 /*MOBILE*/
-aside {
-
-}
+aside {}
 
 @media (min-width: 30em) {
 
@@ -49,8 +48,8 @@ aside {
   /* Content -----------------*/
   body {
     background-color: #fff;
-    font-family: "Muli", Arial serif;
-    padding: 5em;
+    font-family: 'Oxygen', sans-serif;
+    padding: 1em;
   }
 
   .title {
@@ -65,7 +64,7 @@ aside {
   }
 
   .floating_p {
-    font-family: 'Muli';
+    font-family: 'Oxygen', sans-serif;
     background-color: #F3E13C;
     font-size: 44px;
     position: absolute;
@@ -82,13 +81,7 @@ aside {
   }
 
   .no-display {
-    /* eventuell einiges rausschmeißen */
     display: none;
-    width: 100%;
-    height: 100%;
-    padding: 50px;
-    margin: 0em;
-    height: auto;
     background-color: #e6f2ff;
     border: solid 1px #D6AE16;
   }
@@ -100,7 +93,7 @@ aside {
   }
 
   .result-label {
-    font-family: "Muli", Arial, cursive;
+    font-family: 'Oxygen', sans-serif;
     font-weight: bold;
     color: #ffffff;
     background-color: #214E66;
@@ -118,14 +111,14 @@ aside {
     font-size: 44px;
     position: absolute;
     height: 85%;
-    width:85%;
+    width: 85%;
     padding: 7.555%;
     color: #6FA5B0;
   }
 
   .info-text {
-    font-family: "Muli", Arial, cursive;
     background-color: #B5E2ED;
+    font-family: 'Oxygen', sans-serif;
     font-size: 44px;
     position: absolute;
     width: 85%;
@@ -181,14 +174,15 @@ aside {
 /*DESKTOP */
 @media (min-width: 80em) {
   .square-container {
+    margin: 7px;
     width: 120em;
-    height: 120em;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
   }
 
   .square {
-    width: 30em;
+    width: 40em;
     height: auto;
     float: left;
   }
@@ -206,4 +200,35 @@ aside {
     height: 100%;
     width: 100%;
   }
+
+  /*----- Changes for the bigger screen*/
+  .floating_p {
+    font-family: 'Oxygen', sans-serif;
+    background-color: #F3E13C;
+    font-size: 200%;
+    position: absolute;
+    height: 85%;
+    padding: 7.555%;
+  }
+
+  /*
+
+    .info-title {
+      background-color: #B5E2ED;
+      font-family: 'Lobster', cursive;
+      font-weight: bold;
+      position: absolute;
+      height: 85%;
+      padding: 7.555%;
+      color: #6FA5B0;
+    }
+
+    .info-text {
+      font-family: 'Oxygen', sans-serif
+      background-color: #B5E2ED;
+      font-size: 44px;
+      color: #6FA5B0;
+    }
+
+*/
 }
