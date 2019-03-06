@@ -49,15 +49,15 @@ aside {}
   body {
     background-color: #fff;
     font-family: 'Oxygen', sans-serif;
-    padding: 1em;
+    padding: 7px;
   }
 
   .title {
     font-family: 'Lobster', cursive;
     text-align: left;
-    font-size: 80px;
+    font-size: 100px;
     padding: 1em;
-    padding-left: 0em;
+    padding-left: 7px;
     text-align: left;
     font-weight: bold;
     color: #594615;
@@ -82,8 +82,6 @@ aside {}
 
   .no-display {
     display: none;
-    background-color: #e6f2ff;
-    border: solid 1px #D6AE16;
   }
 
   .analyze {}
