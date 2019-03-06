@@ -3,8 +3,16 @@
 
 
 
+/* wird bei allem kleiner als 50em angewendet: */
+aside {
+  /* nur Farb- und Hintergrundformatierungen */
+
+}
 
 
+
+/*MOBILE*/
+@media (min-width: 30em) {
 
 /* Square stuff-----------------*/
 .square-container {
@@ -163,8 +171,8 @@ th {
   border-bottom: 1px solid #d4d4d4;
 }
 
-
-/* noch nicht ready: */
+}
+/*DESKTOP */
 @media (min-width: 80em) {
 
 
@@ -299,12 +307,5 @@ th {
   }
 
 
-
-}
-
-
-/* wird bei allem kleiner als 50em angewendet: */
-aside {
-  /* nur Farb- und Hintergrundformatierungen */
 
 }
