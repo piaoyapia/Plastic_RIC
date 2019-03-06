@@ -34,7 +34,7 @@ function showPicked(input) {
 
 function analyze() {
   var uploadFiles = el('file-input').files;
-  if (uploadFiles.length != 1) alert('Please select 1 file to analyze!');
+  if (uploadFiles.length != 1) alert('Please select one picture to analyze!');
 
   el('analyze-button').innerHTML = 'Analyze...';
   var xhr = new XMLHttpRequest();
@@ -47,16 +47,18 @@ function analyze() {
     if (this.readyState === 4) {
       var response = JSON.parse(e.target.responseText);
 
-      el('result-label').innerHTML = `${'The identified Plastic is ' + response['result']}`;
+      /* el('result-label').innerHTML = `${'The identified plastic is of category ' + response['result']}`;
 
       var response_for_selection = `${response['result']}`;
       var split = response_for_selection.split("_", 1);
       selection = split[0];
+
+      */
       update_text();
     }
     el('analyze-button').innerHTML = 'Analyse';
 
-    // try to show
+    // show after analyzing
     $('.info-box').show();
 
 
@@ -111,7 +113,7 @@ function update_text() {
     el('info_alternatives_content').innerHTML = content[3];
 
     //Update label needed for analysis:
-    el('result-label').innerHTML = `${'The identified Plastic is ' + content[0]}`;
+    el('result-label').innerHTML = `${'The identified Plastic is of category ' + content[0]}`;
 
   }
 }
