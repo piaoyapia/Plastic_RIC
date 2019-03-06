@@ -57,7 +57,7 @@ body {
 .title{
   font-family: "Rock Salt";
   text-align: left;
-  font-size: 3em;
+  font-size: 4em;
   font-weight: bold;
   color: #594615;
 }
@@ -66,7 +66,7 @@ body {
 .floating_p {
   font-family: 'Muli';
   background-color: #F3E13C;
-  font-size: 3em;
+  font-size: 44px;
   position: absolute;
   height: 85%;
   padding: 7.555%;
@@ -88,7 +88,7 @@ img{
   display: none;
   width: 100%;
   height:100%;
-  padding: 0.2em;
+  padding: 50px;
   margin: 0em;
   height: auto;
   background-color: #e6f2ff;
@@ -99,7 +99,7 @@ img{
 }
 
 .upload-label {
-  font-size: 0.5em;
+  font-size: 22px;
 }
 
 .result-label {
@@ -108,8 +108,8 @@ img{
   width: 100%;
   height: 100%;
   margin-top: 0em;
-  padding: 7.555%;
-  font-size: 5em;
+  padding: 100px;
+  font-size: 50px;
 }
 
 
@@ -121,7 +121,7 @@ img{
 }
 
 .info-text {
-  font-size: 3em;
+  font-size: 44px;
   position: absolute;
   width:80%;
   height: 80%;
@@ -132,7 +132,7 @@ img{
 button.choose-file-button {
   font: "Muli", Arial, serif;
   background-color: #ffffff;
-  font-size: 7em;
+  font-size: 80px;
   color: #8A6117;
   width: 100%;
   height: 100%;
@@ -144,7 +144,7 @@ button.analyze-button {
   height: 100%;
   border: solid 1px #D6AE16;
   background-color: #D6AE16;
-  font-size: 7em;
+  font-size: 80px;
   color: #ffffff;
 }
 
@@ -177,13 +177,13 @@ th {
 
 
   .square-container {
-    width: 100%;
-    height:100%;
+    width: 90em;
+    height:90em;
     display:  flex;
     flex-wrap: wrap;
   }
   .square{
-    width: 100%;
+    width: 30em;
     height: auto;
     float: left;
   }
@@ -209,10 +209,20 @@ th {
     padding: em;
   }
 
+
+  .title{
+    font-family: "Rock Salt";
+    text-align: left;
+    font-size: 3em;
+    font-weight: bold;
+    color: #594615;
+  }
+
+
   .floating_p {
     font-family: 'Muli';
     background-color: #F3E13C;
-    font-size: 1.1em;
+    font-size: 24px;
     position: absolute;
     height: 85%;
     padding: 7.555%;
@@ -224,9 +234,18 @@ th {
   }
 
   .upload-label {
-    font-size: 70%;
+    font-size: 24px;
   }
 
+  .result-label {
+    font-family: "Muli", Arial, cursive;
+    color: #8A6117;
+    width: 100%;
+    height: 100%;
+    margin-top: 0em;
+    padding: 100px;
+    font-size: 50px;
+  }
 
 
   .info-title {
@@ -237,7 +256,7 @@ th {
   }
 
   .info-text {
-    font-size: 1.1em;
+    font-size: 44px;
     position: absolute;
     width:80%;
     height: 80%;
@@ -248,7 +267,7 @@ th {
   button.choose-file-button {
     font: "Muli", Arial, serif;
     background-color: #ffffff;
-    font-size: 3em;
+    font-size: 40px;
     color: #8A6117;
     width: 100%;
     height: 100%;
@@ -260,7 +279,7 @@ th {
     height: 100%;
     border: solid 1px #D6AE16;
     background-color: #D6AE16;
-    font-size: 3em;
+    font-size: 40px;
     color: #ffffff;
   }
 
