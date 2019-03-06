@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
-@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 
 /* Colors
 #07384F
@@ -25,9 +25,9 @@ aside {
     flex-basis: calc(33.333% - 10px);
     width: 60em;
     height: 60em;
-    margin: 10px;
-    border: 2px solid;
-    border-radius: 2px;
+    margin: 7px;
+    /*border: 2px solid;*/
+    border-radius: 0px;
     color: #594615;
     box-sizing: border-box;
   }
@@ -54,9 +54,12 @@ aside {
   }
 
   .title {
-    font-family: "Rock Salt";
+    font-family: 'Lobster', cursive;
     text-align: left;
-    font-size: 4em;
+    font-size: 80px;
+    padding: 1em;
+    padding-left: 0em;
+    text-align: left;
     font-weight: bold;
     color: #594615;
   }
@@ -87,6 +90,7 @@ aside {
     margin: 0em;
     height: auto;
     background-color: #e6f2ff;
+    border: solid 1px #D6AE16;
   }
 
   .analyze {}
@@ -107,7 +111,7 @@ aside {
 
   .info-title {
     background-color: #B5E2ED;
-    font-family: "Rock Salt", Arial, cursive;
+    font-family: 'Lobster', cursive;
     font-weight: bold;
     font-size: 44px;
     position: absolute;
@@ -118,6 +122,7 @@ aside {
   }
 
   .info-text {
+    font-family: "Muli", Arial, cursive;
     background-color: #B5E2ED;
     font-size: 44px;
     position: absolute;
@@ -129,7 +134,7 @@ aside {
 
   /*---- Buttons and stuff */
   button.choose-file-button {
-    font: "Muli", Arial, serif;
+    font-family: 'Lobster', cursive;
     background-color: #ffffff;
     font-size: 80px;
     color: #8A6117;
@@ -138,7 +143,7 @@ aside {
   }
 
   button.analyze-button {
-    font: "Muli", Arial, serif;
+    font-family: 'Lobster', cursive;
     width: 100%;
     height: 100%;
     border: solid 1px #D6AE16;
