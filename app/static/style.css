@@ -9,7 +9,7 @@
 */
 /*MOBILE*/
 aside {
-  .info-title {}
+
 }
 
 @media (min-width: 30em) {
@@ -101,11 +101,13 @@ aside {
 
   .result-label {
     font-family: "Muli", Arial, cursive;
-    color: #8A6117;
-    width: 100%;
-    height: 100%;
-    margin-top: 0em;
-    padding: 100px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #214E66;
+    position: absolute;
+    height: 85%;
+    width: 85%;
+    padding: 7.555%;
     font-size: 50px;
   }
 
@@ -179,8 +181,8 @@ aside {
 /*DESKTOP */
 @media (min-width: 80em) {
   .square-container {
-    width: 90em;
-    height: 90em;
+    width: 120em;
+    height: 120em;
     display: flex;
     flex-wrap: wrap;
   }
