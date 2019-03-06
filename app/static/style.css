@@ -112,6 +112,7 @@ aside {
     font-size: 44px;
     position: absolute;
     height: 85%;
+    width:85%;
     padding: 7.555%;
     color: #6FA5B0;
   }
@@ -120,6 +121,7 @@ aside {
     background-color: #B5E2ED;
     font-size: 44px;
     position: absolute;
+    width: 85%;
     height: 85%;
     padding: 7.555%;
     color: #6FA5B0;
