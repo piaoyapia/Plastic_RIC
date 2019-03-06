@@ -82,9 +82,11 @@ aside {}
 
   .no-display {
     display: none;
+
   }
 
-  .analyze {}
+  .analyze {
+  }
 
   .upload-label {
     font-size: 22px;
