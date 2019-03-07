@@ -47,7 +47,7 @@ function analyze() {
     if (this.readyState === 4) {
       var response = JSON.parse(e.target.responseText);
 
-      el('result-label').innerHTML = `${'The identified plastic is of category ' + response['result']}`;
+      // el('result-label').innerHTML = `${'The identified plastic is of category ' + response['result']}`;
 
       var response_for_selection = `${response['result']}`;
       var split = response_for_selection.split("_", 1);
