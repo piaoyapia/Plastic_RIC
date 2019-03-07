@@ -1,6 +1,6 @@
 //Constant
 // 0 = Debug Mode; 1 = Launchmode
-launchmode = 0;
+launchmode = 1;
 
 //Variable
 var el = x => document.getElementById(x);
@@ -14,6 +14,7 @@ function set_selection() {
   if (launchmode == 1) {
   $('.info-box').hide();
   $('.analyze-button').hide();
+  $('.result-label').hide();
 }
 
 }
@@ -56,6 +57,7 @@ function analyze() {
     el('analyze-button').innerHTML = 'Analyse';
 
     // show after analyzing
+    $('.result-label').show();
     $('.info-box').show();
 
 
