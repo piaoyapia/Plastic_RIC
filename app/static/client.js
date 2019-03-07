@@ -9,7 +9,7 @@ var el = x => document.getElementById(x);
 
 function set_selection() {
   selection = 1;
-  el('result-label').innerHTML = `${'The identified Plastic is not defined yet.'}`;
+  el('result-label').innerHTML = `${'Please choose a photo to identify first.'}`;
 
   //hide, if the launchmode is on
   if (launchmode == 1) {
@@ -47,13 +47,12 @@ function analyze() {
   xhr.onload = function(e) {
     if (this.readyState === 4) {
       var response = JSON.parse(e.target.responseText);
-/*
-      el('result-label').innerHTML = `${'The identified plastic is of category ' + response['result']}`;
+
+      el('result-label').innerHTML = `${response['result']}`;
 
       var response_for_selection = `${response['result']}`;
       var split = response_for_selection.split("_", 1);
       selection = split[0];
-*/
 
       update_text();
     }
