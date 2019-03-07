@@ -9,7 +9,6 @@ var el = x => document.getElementById(x);
 
 function set_selection() {
   selection = 1;
-  el('result-label').innerHTML = `${'Please choose a photo to analyze first.'}`;
 
   //hide, if the launchmode is on
   if (launchmode == 1) {
@@ -46,8 +45,10 @@ function analyze() {
   }
   xhr.onload = function(e) {
     if (this.readyState === 4) {
+
+      /*
       var response = JSON.parse(e.target.responseText);
-/*
+
       el('result-label').innerHTML = `${response['result']}`;
 
       var response_for_selection = `${response['result']}`;
@@ -115,7 +116,7 @@ function update_text() {
     el('info_market_content').innerHTML = content[1];
     el('info_recycling_content').innerHTML = content[2];
     el('info_alternatives_content').innerHTML = content[3];
-    el('plasticName_content').innerHTML = content[4];
+   //  el('plasticName_content').innerHTML = content[4];
 
     //Update label needed for analysis:
     el('result-label').innerHTML = `${'The identified Plastic is ' + content[4]}`;
