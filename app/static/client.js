@@ -9,7 +9,7 @@ var el = x => document.getElementById(x);
 
 function set_selection() {
   selection = 1;
-  el('result-label').innerHTML = `${'Please choose a photo to identify first.'}`;
+  el('result-label').innerHTML = `${'Please choose a photo to analyze first.'}`;
 
   //hide, if the launchmode is on
   if (launchmode == 1) {
