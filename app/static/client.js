@@ -46,16 +46,7 @@ function analyze() {
   xhr.onload = function(e) {
     if (this.readyState === 4) {
 
-      /*
-      var response = JSON.parse(e.target.responseText);
-
-      el('result-label').innerHTML = `${response['result']}`;
-
-      var response_for_selection = `${response['result']}`;
-      var split = response_for_selection.split("_", 1);
-      selection = split[0];
-      */
-
+// Update of the texts through csv - used in update_text
       update_text();
     }
     el('analyze-button').innerHTML = 'Analyse';
@@ -120,6 +111,16 @@ function update_text() {
 
     //Update label needed for analysis:
     el('result-label').innerHTML = `${'The identified Plastic is ' + content[4]}`;
+
+  /* COMMENT for future applications: if this text should not be updated through an csv but through the classes, use the following code
+
+  var response = JSON.parse(e.target.responseText);
+  el('result-label').innerHTML = `${response['result']}`;
+
+  var response_for_selection = `${response['result']}`;
+  var split = response_for_selection.split("_", 1);
+  selection = split[0];
+  */
 
   }
 }
