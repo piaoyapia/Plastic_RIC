@@ -9,6 +9,7 @@ var el = x => document.getElementById(x);
 
 function set_selection() {
   selection = 1;
+  el('result-label').innerHTML = `${'The identified Plastic is not defined yet.'}`;
 
   //hide, if the launchmode is on
   if (launchmode == 1) {
