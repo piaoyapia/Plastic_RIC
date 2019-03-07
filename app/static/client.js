@@ -9,6 +9,7 @@ var el = x => document.getElementById(x);
 
 function set_selection() {
   selection = 1;
+  el('result-label').innerHTML = `${'Please choose a photo to analyze first.'}`;
 
   //hide, if the launchmode is on
   if (launchmode == 1) {
@@ -34,7 +35,7 @@ function showPicked(input) {
 
 function analyze() {
   var uploadFiles = el('file-input').files;
-  if (uploadFiles.length != 1) alert('Please select one picture to analyze!');
+  if (uploadFiles.length != 1) alert('Please select one picture to analyze.');
 
   el('analyze-button').innerHTML = 'Analyze...';
   var xhr = new XMLHttpRequest();
@@ -47,13 +48,12 @@ function analyze() {
     if (this.readyState === 4) {
       var response = JSON.parse(e.target.responseText);
 
-      /* el('result-label').innerHTML = `${'The identified plastic is of category ' + response['result']}`;
+      el('result-label').innerHTML = `${response['result']}`;
 
       var response_for_selection = `${response['result']}`;
       var split = response_for_selection.split("_", 1);
       selection = split[0];
 
-      */
       update_text();
     }
     el('analyze-button').innerHTML = 'Analyse';
