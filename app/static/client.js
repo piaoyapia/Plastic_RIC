@@ -52,17 +52,18 @@ function analyze() {
 
       var response = JSON.parse(e.target.responseText);
       el('result-label').innerHTML = `${response['result']}`;
-    
 
 // Update of the texts through csv - used in update_text
       update_text();
+      // show after analyzing
+      $('.result-label').show();
+      $('.info-box').show();
+
     }
 
     el('analyze-button').innerHTML = 'Analyse';
 
-    // show after analyzing
-    $('.result-label').show();
-    $('.info-box').show();
+
 
 
   }
