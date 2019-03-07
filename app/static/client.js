@@ -100,8 +100,8 @@ function update_text() {
     el('info_market_title').innerHTML = title[1];
     el('info_recycling_title').innerHTML = title[2];
     el('info_alternatives_title').innerHTML = title[3];
-    // <--- stays the same for every possible content.
-
+    // 
+    el('info_plastic_name').innerHTML = title[4];
 
     // The choosen content: Splits the rows of the entry:
     var content = allRows[selection].split('§');
@@ -111,9 +111,10 @@ function update_text() {
     el('info_market_content').innerHTML = content[1];
     el('info_recycling_content').innerHTML = content[2];
     el('info_alternatives_content').innerHTML = content[3];
+    el('info_plastic_name').innerHTML = content[4];
 
     //Update label needed for analysis:
-    el('result-label').innerHTML = `${'The identified Plastic is of category ' + content[0]}`;
+    el('result-label').innerHTML = `${'The identified Plastic is of category ' + content[4]}`;
 
   }
 }
