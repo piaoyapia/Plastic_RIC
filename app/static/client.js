@@ -13,6 +13,7 @@ function set_selection() {
   //hide, if the launchmode is on
   if (launchmode == 1) {
   $('.info-box').hide();
+  $('.analyze-button').hide();
 }
 
 }
@@ -28,6 +29,8 @@ function showPicked(input) {
   reader.onload = function(e) {
     el('image-picked').src = e.target.result;
     el('image-picked').className = '';
+// show analyze button
+    $('.analyze-button').show();
   }
   reader.readAsDataURL(input.files[0]);
 }
@@ -49,6 +52,7 @@ function analyze() {
 // Update of the texts through csv - used in update_text
       update_text();
     }
+
     el('analyze-button').innerHTML = 'Analyse';
 
     // show after analyzing
