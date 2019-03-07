@@ -46,13 +46,13 @@ function analyze() {
   xhr.onload = function(e) {
     if (this.readyState === 4) {
       var response = JSON.parse(e.target.responseText);
-
+/*
       el('result-label').innerHTML = `${'The identified plastic is of category ' + response['result']}`;
 
       var response_for_selection = `${response['result']}`;
       var split = response_for_selection.split("_", 1);
       selection = split[0];
-
+*/
 
       update_text();
     }
@@ -100,8 +100,11 @@ function update_text() {
     el('info_market_title').innerHTML = title[1];
     el('info_recycling_title').innerHTML = title[2];
     el('info_alternatives_title').innerHTML = title[3];
-    //  only title, no content
+    //please note that the 'plastic-name-title' is only the heading of the section. The content will be examined below!!
     el('info_plasticName_title').innerHTML = title[4];
+
+    // <--- stays the same for every possible content.
+
 
     // The choosen content: Splits the rows of the entry:
     var content = allRows[selection].split('§');
@@ -111,10 +114,10 @@ function update_text() {
     el('info_market_content').innerHTML = content[1];
     el('info_recycling_content').innerHTML = content[2];
     el('info_alternatives_content').innerHTML = content[3];
-    el('info_plasticName_content').innerHTML = content[4];
+    el('plasticName_content').innerHTML = content[4];
 
     //Update label needed for analysis:
-    el('result-label').innerHTML = `${'The identified Plastic is of category ' + content[4]}`;
+    el('result-label').innerHTML = `${'The identified Plastic is ' + content[4]}`;
 
   }
 }
