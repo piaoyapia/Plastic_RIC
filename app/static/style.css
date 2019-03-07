@@ -54,14 +54,13 @@ aside {}
 
   .title {
     font-family: 'Lobster', cursive;
+    text-align: left;
     font-size: 100px;
     padding: 1em;
     padding-left: 7px;
+    text-align: left;
+    font-weight: bold;
     color: #594615;
-    position: absolute;
-    top:300px;
-    left: 30px;
-    /* border: solid 1px #D6AE16; */
   }
 
   .floating_p {
@@ -101,7 +100,7 @@ aside {}
     height: 85%;
     width: 85%;
     padding: 7.555%;
-    font-size: 60px;
+    font-size: 80px;
   }
 
   .info-title {
@@ -210,17 +209,7 @@ aside {}
     height: 85%;
     padding: 7.555%;
   }
-  .title {
-    font-family: 'Lobster', cursive;
-    font-size: 100px;
-    padding: 1em;
-    padding-left: 7px;
-    color: #594615;
-    position: absolute;
-    top:0px;
-    left: 0px;
-    /* border: solid 1px #D6AE16; */
-  }
+
 
 
     .info-title {
