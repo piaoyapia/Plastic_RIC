@@ -100,7 +100,7 @@ function update_text() {
     el('info_market_title').innerHTML = title[1];
     el('info_recycling_title').innerHTML = title[2];
     el('info_alternatives_title').innerHTML = title[3];
-    // 
+    //  only title, no content
     el('info_plastic_name').innerHTML = title[4];
 
     // The choosen content: Splits the rows of the entry:
