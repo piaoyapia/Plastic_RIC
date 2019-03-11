@@ -56,9 +56,7 @@ function analyze() {
 // Update of the texts through csv - used in update_text
       update_text();
 
-      // show after analyzing
-      $('.result-label').show();
-      $('.info-box').show();
+
     }
 
     el('analyze-button').innerHTML = 'Analyse';
@@ -127,6 +125,10 @@ function update_text() {
   var split = response_for_selection.split("_", 1);
   selection = split[0];
   */
+
+  // show after analyzing // was in the main block before.
+  $('.result-label').show();
+  $('.info-box').show();
 
   }
 }
