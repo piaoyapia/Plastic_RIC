@@ -8,7 +8,7 @@ var el = x => document.getElementById(x);
 
 
 function set_selection() {
-  //selection = 1;
+  selection = 1;
 
   //hide, if the launchmode is on
   if (launchmode == 1) {
@@ -88,6 +88,11 @@ function print_data(data) {
 }
 
 function update_text() {
+
+  // show after analyzing // was in the main block before.
+  $('.result-label').show();
+  $('.info-box').show();
+
   if (selection != 99) {
     /// constant titles --> csv headlines
     // rows get selected
@@ -126,9 +131,7 @@ function update_text() {
   selection = split[0];
   */
 
-  // show after analyzing // was in the main block before.
-  $('.result-label').show();
-  $('.info-box').show();
+
 
   }
 }
