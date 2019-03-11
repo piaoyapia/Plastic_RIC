@@ -8,7 +8,7 @@ var el = x => document.getElementById(x);
 
 
 function set_selection() {
-  selection = 1;
+  //selection = 1;
 
   //hide, if the launchmode is on
   if (launchmode == 1) {
