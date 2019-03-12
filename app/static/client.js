@@ -8,7 +8,7 @@ selection = 2;
 
 
 function set_selection() {
-  selection = 1;
+  selection = 2;
   //hide, if the launchmode is on
   if (launchmode == 1) {
   $('.info-box').hide();
@@ -50,6 +50,8 @@ function analyze() {
   xhr.onload = function(e) {
     if (this.readyState === 4) {
 
+    activate_result();
+
       var response = JSON.parse(e.target.responseText);
       el('result-label').innerHTML = `${response['result']}`;
       var response_for_selection = `${response['result']}`;
@@ -60,7 +62,7 @@ function analyze() {
       update_text();
 
     }
-    activate_result();
+
     el('analyze-button').innerHTML = 'Analyse';
 
 
