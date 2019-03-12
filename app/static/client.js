@@ -14,7 +14,6 @@ function set_selection() {
   $('.analyze-button').hide();
   $('.result-label').hide();
   }
-
 }
 
 function showPicker(inputId) {
@@ -30,6 +29,9 @@ function showPicked(input) {
     el('image-picked').className = '';
 // show analyze button
     $('.analyze-button').show();
+    //hide result and infoboxes, in case an new photo gets uploaded
+    $('.info-box').hide();
+    $('.result-label').hide();
   }
   reader.readAsDataURL(input.files[0]);
 }
@@ -48,7 +50,7 @@ function analyze() {
   }
   xhr.onload = function(e) {
     if (this.readyState === 4) {
-
+// show result boxes, to fill them up:
     activate_result();
 
       var response = JSON.parse(e.target.responseText);
@@ -59,11 +61,9 @@ function analyze() {
 
 // Update of the texts through csv - used in update_text
       update_text(selection);
-
     }
 
     el('analyze-button').innerHTML = 'Analyse';
-
 
   }
 
@@ -113,7 +113,7 @@ function update_text(selection) {
     //please note that the 'plastic-name-title' is only the heading of the section. The content will be examined below!!
     //el('info_plasticName_title').innerHTML = title[4];
 
-    // <--- stays the same for every possible content.
+    // <--- these titles stays the same for every possible content.
 
 
     // The choosen content: Splits the rows of the entry:
@@ -129,13 +129,6 @@ function update_text(selection) {
     //Update label needed for analysis:
     el('result-label').innerHTML = `${'The identified Plastic is ' + content[4]}`;
 
-    /* COMMENT for future applications: if this text should not be updated through an csv but through the classes, use the following code
-    var response = JSON.parse(e.target.responseText);
-    el('result-label').innerHTML = `${response['result']}`;
-    var response_for_selection = `${response['result']}`;
-    var split = response_for_selection.split("_", 1);
-    selection = split[0];
-    */
 
   }
 }
