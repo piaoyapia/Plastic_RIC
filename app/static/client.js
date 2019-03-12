@@ -41,7 +41,7 @@ function analyze() {
   $('.result-label').show();
   $('.info-box').show();
 
-  
+
   var uploadFiles = el('file-input').files;
   if (uploadFiles.length != 1) alert('Please select one picture to analyze.');
 
@@ -57,6 +57,14 @@ function analyze() {
 
       var response = JSON.parse(e.target.responseText);
       el('result-label').innerHTML = `${response['result']}`;
+
+      /* COMMENT for future applications: if this text should not be updated through an csv but through the classes, use the following code       */
+      var response = JSON.parse(e.target.responseText);
+      el('result-label').innerHTML = `${response['result']}`;
+      var response_for_selection = `${response['result']}`;
+      var split = response_for_selection.split("_", 1);
+      selection = split[0];
+
 
 // Update of the texts through csv - used in update_text
       update_text();
@@ -124,13 +132,7 @@ function update_text() {
     //Update label needed for analysis:
     el('result-label').innerHTML = `${'The identified Plastic is ' + content[4]}`;
 
-  /* COMMENT for future applications: if this text should not be updated through an csv but through the classes, use the following code
-  var response = JSON.parse(e.target.responseText);
-  el('result-label').innerHTML = `${response['result']}`;
-  var response_for_selection = `${response['result']}`;
-  var split = response_for_selection.split("_", 1);
-  selection = split[0];
-  */
+
 
 
 
