@@ -4,6 +4,7 @@ launchmode = 1;
 
 //Variable
 var el = x => document.getElementById(x);
+selection = 2;
 
 
 function set_selection() {
@@ -51,6 +52,9 @@ function analyze() {
 
       var response = JSON.parse(e.target.responseText);
       el('result-label').innerHTML = `${response['result']}`;
+      var response_for_selection = `${response['result']}`;
+      var split = response_for_selection.split("_", 1);
+      selection = split[0];
 
 // Update of the texts through csv - used in update_text
       update_text();
