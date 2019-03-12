@@ -7,10 +7,10 @@ var el = x => document.getElementById(x);
 
 //hide, if the launchmode is on
 if (launchmode == 1) {
-$('.info-box').hide();
+/*$('.info-box').hide();
 $('.analyze-button').hide();
 $('.result-label').hide();
-}
+}*/
 
 
 
