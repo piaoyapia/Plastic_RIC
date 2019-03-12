@@ -5,7 +5,6 @@ launchmode = 1;
 //Variable
 var el = x => document.getElementById(x);
 
-
 function set_selection() {
   selection = 1;
   //hide, if the launchmode is on
@@ -29,9 +28,6 @@ function showPicked(input) {
     el('image-picked').className = '';
 // show analyze button
     $('.analyze-button').show();
-    //hide result and infoboxes, in case an new photo gets uploaded
-    $('.info-box').hide();
-    $('.result-label').hide();
   }
   reader.readAsDataURL(input.files[0]);
 }
