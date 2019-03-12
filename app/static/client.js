@@ -4,11 +4,10 @@ launchmode = 1;
 
 //Variable
 var el = x => document.getElementById(x);
-selection = 2;
 
 
 function set_selection() {
-  selection = 2;
+  selection = 1;
   //hide, if the launchmode is on
   if (launchmode == 1) {
   $('.info-box').hide();
@@ -59,7 +58,7 @@ function analyze() {
       selection = split[0];
 
 // Update of the texts through csv - used in update_text
-      update_text();
+      update_text(selection);
 
     }
 
@@ -98,7 +97,7 @@ function print_data(data) {
   all_data = data;
 }
 
-function update_text() {
+function update_text(selection) {
 
   if (selection != 99) {
     /// constant titles --> csv headlines
