@@ -37,6 +37,11 @@ function showPicked(input) {
 }
 
 function analyze() {
+  // was in the main block before.
+  $('.result-label').show();
+  $('.info-box').show();
+
+  
   var uploadFiles = el('file-input').files;
   if (uploadFiles.length != 1) alert('Please select one picture to analyze.');
 
@@ -88,10 +93,6 @@ function print_data(data) {
 }
 
 function update_text() {
-
-  // show after analyzing // was in the main block before.
-  $('.result-label').show();
-  $('.info-box').show();
 
   if (selection != 99) {
     /// constant titles --> csv headlines
