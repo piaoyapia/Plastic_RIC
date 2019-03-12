@@ -5,18 +5,17 @@ launchmode = 1;
 //Variable
 var el = x => document.getElementById(x);
 
+//hide, if the launchmode is on
+if (launchmode == 1) {
+$('.info-box').hide();
+$('.analyze-button').hide();
+$('.result-label').hide();
+}
+
 
 
 function set_selection() {
   selection = 1;
-
-  //hide, if the launchmode is on
-  if (launchmode == 1) {
-  $('.info-box').hide();
-  $('.analyze-button').hide();
-  $('.result-label').hide();
-}
-
 }
 
 function showPicker(inputId) {
@@ -54,11 +53,8 @@ function analyze() {
       var response = JSON.parse(e.target.responseText);
       el('result-label').innerHTML = `${response['result']}`;
 
-
-
 // Update of the texts through csv - used in update_text
       update_text();
-
 
     }
 
