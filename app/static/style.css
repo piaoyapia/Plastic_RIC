@@ -55,11 +55,10 @@ aside {}
   .title {
     font-family: 'Lobster', cursive;
     text-align: left;
-    font-size: 100px;
-    padding: 1em;
+    font-size: 110px;
     padding-left: 7px;
-    text-align: left;
-    font-weight: bold;
+    position: absolute;
+    top: 40%;
     color: #594615;
   }
 
@@ -201,6 +200,17 @@ aside {}
   }
 
   /*----- Changes for the bigger screen*/
+  .title {
+    font-family: 'Lobster', cursive;
+    text-align: left;
+    font-size: 120px;
+    padding-left: 7px;
+    float: left;
+    position: relative;
+    top:12%;
+    color: #594615;
+  }
+
   .floating_p {
     font-family: 'Oxygen', sans-serif;
     background-color: #F3E13C;
