@@ -210,23 +210,15 @@ aside {}
     padding: 7.555%;
   }
 
+  .result-label {
+    font-size: 150%;
+  }
 
+  .info-title {
+    font-size: 200%;
+  }
 
-    .info-title {
-      background-color: #B5E2ED;
-      font-family: 'Lobster', cursive;
-      font-weight: bold;
-      position: absolute;
-      height: 85%;
-      padding: 7.555%;
-      color: #6FA5B0;
-    }
-
-    .info-text {
-      font-family: 'Oxygen', sans-serif
-      background-color: #B5E2ED;
-      font-size: 44px;
-      color: #6FA5B0;
-    }
-
+  .info-text {
+    font-size: 200%;
+  }
 }
