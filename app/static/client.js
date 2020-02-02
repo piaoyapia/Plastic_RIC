@@ -2,7 +2,7 @@
 
 //Constant
 // 0 = Debug Mode; 1 = Launchmode
-launchmode = 0;
+launchmode = 1;
 
 //Variable
 var el = x => document.getElementById(x);
@@ -65,8 +65,8 @@ function analyze() {
 
     function activate_result(){
       // was outside before
-      $('.result-label').show();
-      $('.info-box').show();
+      $(".result-label").show();
+      $(".info-box").show();
     }
 
 
