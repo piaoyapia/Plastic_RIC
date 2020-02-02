@@ -1,179 +1,41 @@
 <html lang='en'>
-
 <head>
   <meta charset='utf-8'>
   <link rel='stylesheet' href='../static/style.css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src='../static/client.js'></script>
-
 </head>
-
-<body onload='set_selection()'>
-
-  <!-- 1 Heading !-->
-  <div class='square-container'>
-
-    <div class='square'>
-      <div class='content'>
-        <div class='title'>Plastic Classifier RIC</div>
+<body>
+<div>
+  <div class='center'>
+    <div class='title'>Classify Bear Images 🐻</div>
+    <p>
+      Use images of <strong>teddy</strong> bears, <strong>black</strong> bears, <strong>grizzly</strong> bears, or
+      all three!
+    </p>
+    <div class='content'>
+      <div class='no-display'>
+        <input id='file-input'
+               class='no-display'
+               type='file'
+               name='file'
+               accept='image/*'
+               onchange='showPicked(this)'>
       </div>
-    </div>
-
-
-
-    <!-- 2 Intro picture !-->
-    <div class='square'>
-      <div class='content'>
-        <img src="https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/view/square.JPG?fbclid=IwAR37wDdgmYbOGdW7oOYJPfdkFui5s-GMvQSamlXdkG31sxKW7Tfwh1FUzdc" ;></img>
+      <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+      <div class='upload-label'>
+        <label id='upload-label'>No file chosen</label>
       </div>
-    </div>
-
-    <!-- 3 Description of the site !-->
-    <div class='square'>
-      <div class='content'>
-        <div class=floating_p>
-          In everyday life, plastic often seems to be just everywhere. This app is supposed to give some information about the plastics we use everyday. The Resin identification code (RIC) is a symbol appearing on products which shows the resin
-          the plastic is made of. The following classifier makes it possible to identify the plastic and gives some information about the environmental issues revolving around the classified plastic.
-        </div>
+      <div>
+        <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
       </div>
-    </div>
-
-    <!-- 4 Take Photo !-->
-    <div class='square'>
-      <div class='content'>
-
-        <div class='no-display'>
-          <input id='file-input' class='no-display' type='file' name='file' accept='image/*' onchange='showPicked(this)'>
-        </div>
-
-        <button class='choose-file-button' type='button' onclick='showPicker()'>Take Photo
-          <div class='upload-label'>
-            <label id='upload-label'>Choose a picture</label>
-          </div>
-        </button>
-
+      <div class='analyze'>
+        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
       </div>
-    </div>
-
-    <!-- 5 Choosen Photo !-->
-    <div class='square'>
-      <div class='content'>
-
-        <img id='image-picked' class='no-display' alt='Chosen Image'></img>
-
+      <div class='result-label'>
+        <label id='result-label'></label>
       </div>
-    </div>
-
-    <!-- 6 Analyze !-->
-    <div class='square'>
-      <div class='content'>
-        <div class='analyze'>
-          <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- 7 Show Analysis !----------------------------------------------------------->
-    <div class='square'>
-      <div class='content'>
-        <div class='result-label'>
-          <label id='result-label'></label>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Info-Blocks !--------------------------------------------------------------->
-
-    <!-- Show information about the analyzed plastic !-->
-
-    <!-- hide and seek
-    <div class='info-box'>
-      <div class='square'>
-        <div class='content'>
-          <div id='info_plasticName_title' class='info-title'>
-          </div>
-        </div>
-      </div>
-      <div class='square'>
-        <div class='content'>
-          <div id='plasticName_content' class='info-text'>
-          </div>
-        </div>
-      </div>
-!-->
-
-    <div class='info-box'>
-      <div class='square'>
-        <div class='content'>
-          <div id='info_general_title' class='info-title'>
-          </div>
-        </div>
-      </div>
-
-
-      <div class='square'>
-        <div class='content'>
-          <div id='info_general_content' class='info-text'>
-          </div>
-        </div>
-      </div>
-
-
-      <div class='square'>
-        <div class='content'>
-          <div id='info_market_title' class='info-title'>
-          </div>
-        </div>
-      </div>
-
-
-      <div class='square'>
-        <div class='content'>
-          <div id='info_market_content' class='info-text'>
-          </div>
-        </div>
-      </div>
-
-      <div class='square'>
-        <div class='content'>
-          <div id='info_recycling_title' class='info-title'>
-          </div>
-        </div>
-      </div>
-
-      <div class='square'>
-        <div class='content'>
-          <div id='info_recycling_content' class='info-text'>
-          </div>
-        </div>
-      </div>
-
-      <div class='square'>
-        <div class='content'>
-          <div id='info_alternatives_title' class='info-title'>
-          </div>
-        </div>
-      </div>
-
-      <div class='square'>
-        <div class='content'>
-          <div id='info_alternatives_content' class='info-text'>
-
-
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
-
-
-
-  </div>
-
-
+</div>
 </body>
-
 </html>
