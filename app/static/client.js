@@ -52,8 +52,8 @@ function analyze() {
     activate_result();
 
       var response = JSON.parse(e.target.responseText);
-      el("result-label").innerHTML = `${response["result"]}`;
-      var response_for_selection = `${response["result"]}`;
+      el('result-label').innerHTML = `${response['result']}`;
+      var response_for_selection = `${response['result']}`;
       var split = response_for_selection.split("_", 1);
       selection = split[0];
 
@@ -73,8 +73,8 @@ function analyze() {
 
 function activate_result(){
   // was in the main block before.
-  $(".result-label").show();
-  $(".info-box").show();
+  $('.result-label').show();
+  $('.info-box').show();
 }
 
 
