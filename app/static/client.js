@@ -16,31 +16,31 @@ function set_selection() {
 }
 
 function showPicker(inputId) {
-  el('file-input').click();
+  el("file-input").click();
   data_output("1_polyethylene_PE");
 }
 
 function showPicked(input) {
-  el('upload-label').innerHTML = input.files[0].name;
+  el("upload-label").innerHTML = input.files[0].name;
   var reader = new FileReader();
   reader.onload = function(e) {
-    el('image-picked').src = e.target.result;
-    el('image-picked').className = '';
+    el("image-picked").src = e.target.result;
+    el("image-picked").className = "";
 // show analyze button
-    $('.analyze-button').show();
+    $(".analyze-button").show();
   }
   reader.readAsDataURL(input.files[0]);
 }
 
 function analyze() {
 
-  var uploadFiles = el('file-input').files;
-  if (uploadFiles.length != 1) alert('Please select one picture to analyze.');
+  var uploadFiles = el("file-input").files;
+  if (uploadFiles.length != 1) alert("Please select one picture to analyze.");
 
-  el('analyze-button').innerHTML = 'Analyze...';
+  el("analyze-button").innerHTML = "Analyze...";
   var xhr = new XMLHttpRequest();
   var loc = window.location
-  xhr.open('POST', `${loc.protocol}//${loc.hostname}:${loc.port}/analyze`, true);
+  xhr.open("POST", `${loc.protocol}//${loc.hostname}:${loc.port}/analyze`, true);
   xhr.onerror = function() {
     alert(xhr.responseText);
   }
@@ -50,8 +50,8 @@ function analyze() {
     activate_result();
 
       var response = JSON.parse(e.target.responseText);
-      el('result-label').innerHTML = `${response['result']}`;
-      var response_for_selection = `${response['result']}`;
+      el("result-label").innerHTML = `${response["result"]}`;
+      var response_for_selection = `${response["result"]}`;
       var split = response_for_selection.split("_", 1);
       selection = split[0];
 
@@ -59,20 +59,20 @@ function analyze() {
       update_text(selection);
     }
 
-    el('analyze-button').innerHTML = 'Analyse';
+    el("analyze-button").innerHTML = "Analyse";
 
   }
 
 
   var fileData = new FormData();
-  fileData.append('file', uploadFiles[0]);
+  fileData.append("file", uploadFiles[0]);
   xhr.send(fileData);
 }
 
 function activate_result(){
   // was in the main block before.
-  $('.result-label').show();
-  $('.info-box').show();
+  $(".result-label").show();
+  $(".info-box").show();
 }
 
 
