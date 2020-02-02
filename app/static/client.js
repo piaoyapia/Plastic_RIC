@@ -17,7 +17,7 @@ function set_selection() {
 
 function showPicker(inputId) {
   el("file-input").click();
-  data_output("1_polyethylene_PE");
+  data_output('1_polyethylene_PE');
 }
 
 function showPicked(input) {
@@ -78,7 +78,7 @@ function activate_result(){
 
 function data_output(selected) {
 
-  if (selected = "1_polyethylene_PET") {
+  if (selected = '1_polyethylene_PET') {
     console.log(selected);
   }
 }
