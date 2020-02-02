@@ -1,5 +1,4 @@
 
-*/
 
 //Constant
 // 0 = Debug Mode; 1 = Launchmode
@@ -131,5 +130,3 @@ function update_text(selection) {
 
   }
 }
-
-*/
