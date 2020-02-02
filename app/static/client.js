@@ -19,7 +19,7 @@ function set_selection() {
 
 function showPicker(inputId) {
   el("file-input").click();
-  data_output('1_polyethylene_PE');
+  data_output("1_polyethylene_PE");
 }
 
 function showPicked(input) {
@@ -63,6 +63,13 @@ function analyze() {
 
     el("analyze-button").innerHTML = "Analyse";
 
+    function activate_result(){
+      // was outside before
+      $('.result-label').show();
+      $('.info-box').show();
+    }
+
+
   }
 
 
@@ -71,11 +78,7 @@ function analyze() {
   xhr.send(fileData);
 }
 
-function activate_result(){
-  // was in the main block before.
-  $('.result-label').show();
-  $('.info-box').show();
-}
+
 
 
 function data_output(selected) {
