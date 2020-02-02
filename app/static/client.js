@@ -125,7 +125,7 @@ function update_text(selection) {
     //el('plasticName_content').innerHTML = content[4];
 
     //Update label needed for analysis:
-    el('result-label').innerHTML = `${'The identified Plastic is ' + content[4]}`;
+    el("result-label").innerHTML = `${"The identified Plastic is " + content[4]}`;
 
 
   }
