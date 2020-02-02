@@ -29,7 +29,9 @@ function showPicked(input) {
     el("image-picked").src = e.target.result;
     el("image-picked").className = "";
 // show analyze button
+
     $(".analyze-button").show();
+    el("analyze-button").innerHTML = "Start Analysis";
   };
   reader.readAsDataURL(input.files[0]);
 }
@@ -56,7 +58,7 @@ function analyze() {
 
 
       var response = JSON.parse(e.target.responseText);
-      el('result-label').innerHTML = `${response['result']}`;
+      el("result-label").innerHTML = `${response['result']}`;
       var response_for_selection = `${response['result']}`;
       var split = response_for_selection.split("_", 1);
       selection = split[0];
