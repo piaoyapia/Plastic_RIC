@@ -30,7 +30,7 @@ function showPicked(input) {
     el("image-picked").className = "";
 // show analyze button
     $(".analyze-button").show();
-  }
+  };
   reader.readAsDataURL(input.files[0]);
 }
 
@@ -39,17 +39,21 @@ function analyze() {
   var uploadFiles = el("file-input").files;
   if (uploadFiles.length != 1) alert("Please select one picture to analyze.");
 
-  el("analyze-button").innerHTML = "Analyze...";
+  el("analyze-button").innerHTML = "Analyzing...";
+
+
+  // show result boxes, to fill them up:
+      activate_result();
+
   var xhr = new XMLHttpRequest();
   var loc = window.location
   xhr.open("POST", `${loc.protocol}//${loc.hostname}:${loc.port}/analyze`, true);
   xhr.onerror = function() {
     alert(xhr.responseText);
-  }
+  };
   xhr.onload = function(e) {
     if (this.readyState === 4) {
-// show result boxes, to fill them up:
-    activate_result();
+
 
       var response = JSON.parse(e.target.responseText);
       el('result-label').innerHTML = `${response['result']}`;
@@ -63,13 +67,6 @@ function analyze() {
 
     el("analyze-button").innerHTML = "Analyse";
 
-    function activate_result(){
-      // was outside before
-      $(".result-label").show();
-      $(".info-box").show();
-    }
-
-
   }
 
 
@@ -78,7 +75,11 @@ function analyze() {
   xhr.send(fileData);
 }
 
-
+function activate_result(){
+  // was inside the main loop before
+  $(".result-label").show();
+  $(".info-box").show();
+}
 
 
 function data_output(selected) {
