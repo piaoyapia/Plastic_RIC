@@ -48,18 +48,17 @@ function analyze() {
       activate_result();
 
   var xhr = new XMLHttpRequest();
-  var loc = window.location
+  var loc = window.location;
   xhr.open("POST", `${loc.protocol}//${loc.hostname}:${loc.port}/analyze`, true);
   xhr.onerror = function() {
     alert(xhr.responseText);
   };
   xhr.onload = function(e) {
     if (this.readyState === 4) {
-
-
       var response = JSON.parse(e.target.responseText);
-      el("result-label").innerHTML = `${response['result']}`;
-      var response_for_selection = `${response['result']}`;
+      /* el("result-label").innerHTML = `${response["result"]}`; */
+      el("result-label").innerHTML = `Result = ${response["result"]}`;
+      var response_for_selection = `${response["result"]}`;
       var split = response_for_selection.split("_", 1);
       selection = split[0];
 
@@ -124,11 +123,11 @@ function update_text(selection) {
     var content = allRows[selection].split('§');
     // Choose the first/second/third/forth column entry of the choosen row.
     //Row gets choosen by the structure of the data.csv (4x4 table)
-    el('info_general_content').innerHTML = content[0];
-    el('info_market_content').innerHTML = content[1];
-    el('info_recycling_content').innerHTML = content[2];
-    el('info_alternatives_content').innerHTML = content[3];
-    el('plasticName_content').innerHTML = content[4];
+    el("info_general_content").innerHTML = content[0];
+    el("info_market_content").innerHTML = content[1];
+    el("info_recycling_content").innerHTML = content[2];
+    el("info_alternatives_content").innerHTML = content[3];
+    el("plasticName_content").innerHTML = content[4];
 
     //Update label needed for analysis:
     el("result-label").innerHTML = `${"The identified Plastic is " + content[4]}`;
