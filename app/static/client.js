@@ -104,10 +104,10 @@ function update_text(selection) {
     // Splits the first row
     var title = allRows[0].split('§');
     // Chooses the first/second/third/forth entry of the first row and writes it in HTML
-    el('info_general_title').innerHTML = title[0];
-    el('info_market_title').innerHTML = title[1];
-    el('info_recycling_title').innerHTML = title[2];
-    el('info_alternatives_title').innerHTML = title[3];
+    el("info_general_title").innerHTML = title[0];
+    el("info_market_title").innerHTML = title[1];
+    el("info_recycling_title").innerHTML = title[2];
+    el("info_alternatives_title").innerHTML = title[3];
     //please note that the 'plastic-name-title' is only the heading of the section. The content will be examined below!!
     //el('info_plasticName_title').innerHTML = title[4];
 
