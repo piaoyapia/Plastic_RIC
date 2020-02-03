@@ -45,7 +45,7 @@ function analyze() {
 
 
   // show result boxes, to fill them up:
-      activate_result();
+
 
   var xhr = new XMLHttpRequest();
   var loc = window.location;
@@ -63,6 +63,7 @@ function analyze() {
       selection = split[0];
 
 // Update of the texts through csv - used in update_text
+      activate_result();
       update_text(selection);
     }
 
