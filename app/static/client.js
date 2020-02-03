@@ -7,6 +7,10 @@ launchmode = 1;
 //Variable
 var el = x => document.getElementById(x);
 
+// Analyzing
+
+var analysis_ready = false;
+
 function set_selection() {
   selection = 1;
   //hide, if the launchmode is on
@@ -63,6 +67,7 @@ function analyze() {
       activate_result();
       // Update of the texts through csv - used in update_text
       update_text(selection);
+      done_analyzing(analysis_ready);
     }
 
   }
@@ -131,12 +136,20 @@ function update_text(selection) {
     //Update label needed for analysis:
     el("result-label").innerHTML = `${"The identified Plastic is " + content[4]}`;
 
-
-
   }
+
+  analysis_ready = true;
+
+}
+
+
+function done_analyzing(analysis_ready){
+
+  if (analysis_ready == true){
+
   // analyse again
    el("analyze-button").innerHTML = "Analyse again";
-
-
+   analysis_ready = false;
+ }
 
 }
