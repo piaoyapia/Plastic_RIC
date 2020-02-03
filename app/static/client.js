@@ -40,8 +40,6 @@ function analyze() {
   var uploadFiles = el("file-input").files;
   if (uploadFiles.length != 1) alert("Please select one picture to analyze.");
 
-
-
   var xhr = new XMLHttpRequest();
   var loc = window.location;
   xhr.open("POST", `${loc.protocol}//${loc.hostname}:${loc.port}/analyze`, true);
@@ -52,8 +50,7 @@ function analyze() {
     if (this.readyState === 4) {
 
       // Restart Analizing
-      el("analyze-button").innerHTML = "Restart Analyzing.";
-
+      el("analyze-button").innerHTML = "Restart Analysis";
 
       var response = JSON.parse(e.target.responseText);
       /* el("result-label").innerHTML = `${response["result"]}`; */
@@ -73,7 +70,6 @@ function analyze() {
 
   // Analyzing
   el("analyze-button").innerHTML = "Analyzing...";
-
 
   var fileData = new FormData();
   fileData.append("file", uploadFiles[0]);
@@ -106,7 +102,6 @@ function print_data(data) {
 }
 
 function update_text(selection) {
-
 
   if (selection != 99) {
     /// constant titles --> csv headlines
