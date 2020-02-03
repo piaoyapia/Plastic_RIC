@@ -15,13 +15,16 @@ aside {}
 
   /* Square stuff-----------------*/
   .square-container {
+    margin: auto;
+    padding: 2em 2em;
     display: block;
+    align-items:  baseline;
     flex-wrap: wrap;
   }
 
   .square {
     position: relative;
-    flex-basis: calc(33.333% );
+    flex-basis: calc(33.333% -10px);
     width: 60em;
     height: 60em;
     border: 2px solid;
@@ -96,14 +99,14 @@ aside {}
     height: 85%;
     width: 85%;
     padding: 7.555%;
-    font-size: 60px;
+    font-size: 70px;
   }
 
   .info-title {
     background-color: #B5E2ED;
     font-family: 'Oxygen', sans-serif;
     font-weight: bold;
-    font-size: 44px;
+    font-size: 60px;
     position: absolute;
     height: 85%;
     width: 85%;
