@@ -63,11 +63,7 @@ function analyze() {
       activate_result();
       // Update of the texts through csv - used in update_text
       update_text(selection);
-
-
     }
-
-
 
   }
 
@@ -76,9 +72,6 @@ function analyze() {
   fileData.append("file", uploadFiles[0]);
   xhr.send(fileData);
 
-
-  // analyse again
-   el("analyze-button").innerHTML = "Analyse again";
 }
 
 function activate_result(){
@@ -106,6 +99,9 @@ function print_data(data) {
 }
 
 function update_text(selection) {
+
+  // analyse again
+   el("analyze-button").innerHTML = "Analyse again";
 
   if (selection != 99) {
     /// constant titles --> csv headlines
@@ -139,7 +135,8 @@ function update_text(selection) {
 
 
 
-
   }
+
+
 
 }
