@@ -40,7 +40,6 @@ function analyze() {
   var uploadFiles = el("file-input").files;
   if (uploadFiles.length != 1) alert("Please select one picture to analyze.");
 
-  el("analyze-button").innerHTML = "Analyzing...";
 
 
   var xhr = new XMLHttpRequest();
@@ -51,6 +50,10 @@ function analyze() {
   };
   xhr.onload = function(e) {
     if (this.readyState === 4) {
+
+
+      el("analyze-button").innerHTML = "Analyzing...";
+
       var response = JSON.parse(e.target.responseText);
       /* el("result-label").innerHTML = `${response["result"]}`; */
 
@@ -67,6 +70,7 @@ function analyze() {
 
   }
 
+  el("analyze-button").innerHTML = "Restart Analyzing.";
 
   var fileData = new FormData();
   fileData.append("file", uploadFiles[0]);
