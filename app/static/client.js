@@ -44,9 +44,6 @@ function analyze() {
   el("analyze-button").innerHTML = "Analyzing...";
 
 
-  // show result boxes, to fill them up:
-
-
   var xhr = new XMLHttpRequest();
   var loc = window.location;
   xhr.open("POST", `${loc.protocol}//${loc.hostname}:${loc.port}/analyze`, true);
@@ -62,12 +59,13 @@ function analyze() {
       var split = response_for_selection.split("_", 1);
       selection = split[0];
 
-// Update of the texts through csv - used in update_text
+       // show result boxes, to fill them up:
       activate_result();
+      // Update of the texts through csv - used in update_text
       update_text(selection);
     }
 
-    el("analyze-button").innerHTML = "Analyse";
+ // analyse again nach unten
 
   }
 
@@ -133,6 +131,8 @@ function update_text(selection) {
     //Update label needed for analysis:
     el("result-label").innerHTML = `${"The identified Plastic is " + content[4]}`;
 
+
+    el("analyze-button").innerHTML = "Analyse again";
 
   }
 }
