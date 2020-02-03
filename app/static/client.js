@@ -1,4 +1,3 @@
-
 //Constant
 // 0 = Debug Mode; 1 = Launchmode
 launchmode = 1;
@@ -11,9 +10,9 @@ function set_selection() {
   selection = 1;
   //hide, if the launchmode is on
   if (launchmode == 1) {
-  $('.info-box').hide();
-  $('.analyze-button').hide();
-  $('.result-label').hide();
+    $('.info-box').hide();
+    $('.analyze-button').hide();
+    $('.result-label').hide();
   }
 }
 
@@ -28,7 +27,7 @@ function showPicked(input) {
   reader.onload = function(e) {
     el("image-picked").src = e.target.result;
     el("image-picked").className = "";
-// show analyze button
+    // show analyze button
 
     $(".analyze-button").show();
     el("analyze-button").innerHTML = "Start Analysis";
@@ -54,6 +53,7 @@ function analyze() {
     if (this.readyState === 4) {
       var response = JSON.parse(e.target.responseText);
       /* el("result-label").innerHTML = `${response["result"]}`; */
+
       el("result-label").innerHTML = `${response["result"]}`;
       var response_for_selection = `${response["result"]}`;
       var split = response_for_selection.split("_", 1);
@@ -63,7 +63,6 @@ function analyze() {
       activate_result();
       // Update of the texts through csv - used in update_text
       update_text(selection);
-      done_analyzing(analysis_ready);
     }
 
   }
@@ -75,7 +74,7 @@ function analyze() {
 
 }
 
-function activate_result(){
+function activate_result() {
   // was inside the main loop before
   $(".result-label").show();
   $(".info-box").show();
@@ -134,4 +133,4 @@ function update_text(selection) {
 
   }
 
- }
+}
