@@ -65,7 +65,7 @@ function analyze() {
       update_text(selection);
     }
 
- // analyse again nach unten
+
 
   }
 
@@ -73,6 +73,10 @@ function analyze() {
   var fileData = new FormData();
   fileData.append("file", uploadFiles[0]);
   xhr.send(fileData);
+
+ // analyse again nach unten
+  el("analyze-button").innerHTML = "Analyse again";
+
 }
 
 function activate_result(){
@@ -132,7 +136,7 @@ function update_text(selection) {
     el("result-label").innerHTML = `${"The identified Plastic is " + content[4]}`;
 
 
-    el("analyze-button").innerHTML = "Analyse again";
+
 
   }
 }
