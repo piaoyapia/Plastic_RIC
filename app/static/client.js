@@ -100,8 +100,6 @@ function print_data(data) {
 
 function update_text(selection) {
 
-  // analyse again
-   el("analyze-button").innerHTML = "Analyse again";
 
   if (selection != 99) {
     /// constant titles --> csv headlines
@@ -136,6 +134,8 @@ function update_text(selection) {
 
 
   }
+  // analyse again
+   el("analyze-button").innerHTML = "Analyse again";
 
 
 
