@@ -58,11 +58,12 @@ function analyze() {
       var response_for_selection = `${response["result"]}`;
       var split = response_for_selection.split("_", 1);
       selection = split[0];
-      
+
+      // show result boxes, to fill them up:
+      activate_result();
       // Update of the texts through csv - used in update_text
       update_text(selection);
-       // show result boxes, to fill them up:
-      activate_result();
+
 
     }
 
@@ -75,8 +76,7 @@ function analyze() {
   fileData.append("file", uploadFiles[0]);
   xhr.send(fileData);
 
- // analyse again nach unten
-  el("analyze-button").innerHTML = "Analyse again";
+
 
 }
 
@@ -140,4 +140,6 @@ function update_text(selection) {
 
 
   }
+  // analyse again nach unten
+   el("analyze-button").innerHTML = "Analyse again";
 }
