@@ -58,11 +58,12 @@ function analyze() {
       var response_for_selection = `${response["result"]}`;
       var split = response_for_selection.split("_", 1);
       selection = split[0];
-
-       // show result boxes, to fill them up:
-      activate_result();
+      
       // Update of the texts through csv - used in update_text
       update_text(selection);
+       // show result boxes, to fill them up:
+      activate_result();
+
     }
 
 
