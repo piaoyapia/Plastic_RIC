@@ -63,7 +63,8 @@ function analyze() {
       activate_result();
       // Update of the texts through csv - used in update_text
       update_text(selection);
-
+      // analyse again
+       el("analyze-button").innerHTML = "Analyse again";
 
     }
 
@@ -140,6 +141,5 @@ function update_text(selection) {
 
 
   }
-  // analyse again nach unten
-   el("analyze-button").innerHTML = "Analyse again";
+
 }
