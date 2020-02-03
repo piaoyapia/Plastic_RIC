@@ -51,8 +51,9 @@ function analyze() {
   xhr.onload = function(e) {
     if (this.readyState === 4) {
 
+      // Restart Analizing
+      el("analyze-button").innerHTML = "Restart Analyzing.";
 
-      el("analyze-button").innerHTML = "Analyzing...";
 
       var response = JSON.parse(e.target.responseText);
       /* el("result-label").innerHTML = `${response["result"]}`; */
@@ -70,7 +71,9 @@ function analyze() {
 
   }
 
-  el("analyze-button").innerHTML = "Restart Analyzing.";
+  // Analyzing
+  el("analyze-button").innerHTML = "Analyzing...";
+
 
   var fileData = new FormData();
   fileData.append("file", uploadFiles[0]);
