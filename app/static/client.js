@@ -5,6 +5,15 @@ launchmode = 0;
 //Variable
 var el = x => document.getElementById(x);
 
+update_illu();
+
+function update_illu() {
+  var bild  = '<img src="';
+  bild += 'https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/view/square_4.JPG?fbclid=IwAR37wDdgmYbOGdW7oOYJPfdkFui5s-GMvQSamlXdkG31sxKW7Tfwh1FUzdc">';
+  el("illu").innerHTML=bild;
+}
+
+
 
 function set_selection() {
   selection = 1;
@@ -124,11 +133,6 @@ function print_data(data) {
 }
 
 
-update_illu();
-function update_illu() {
-  var ba = document.getElementById("illu");
-  ba.innerHTML= "<img src=\"https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/view/square_1.JPG?fbclid=IwAR37wDdgmYbOGdW7oOYJPfdkFui5s-GMvQSamlXdkG31sxKW7Tfwh1FUzdc\" width=\"400px\" height=\"150px\">";
-}
 
 function update_text(selection) {
 
