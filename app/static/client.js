@@ -80,7 +80,7 @@ function analyze() {
       var response_for_selection = `${response["result"]}`;
       var split = response_for_selection.split("_", 1);
       selection = split[0];
-      update_illu();
+
       // show result boxes, to fill them up:
       activate_result();
       // Update of the texts through csv - used in update_text
@@ -124,10 +124,10 @@ function print_data(data) {
 }
 
 
-
+update_illu();
 function update_illu() {
   var ba = document.getElementById("illu");
-  ba.innerHTML= "<img src=\"https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/view/square.JPG?fbclid=IwAR37wDdgmYbOGdW7oOYJPfdkFui5s-GMvQSamlXdkG31sxKW7Tfwh1FUzdc\">";
+  ba.innerHTML= "<img src=\"https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/view/square_1.JPG?fbclid=IwAR37wDdgmYbOGdW7oOYJPfdkFui5s-GMvQSamlXdkG31sxKW7Tfwh1FUzdc\" width=\"400px\" height=\"150px\">";
 }
 
 function update_text(selection) {
