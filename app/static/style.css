@@ -172,7 +172,7 @@ aside {}
 
 /*ADD ON END */
 /*DESKTOP */
-@media (min-width: 57em) {
+@media (min-width: 62em) {
   .square-container {
     margin: 7px;
     width: 86em;
