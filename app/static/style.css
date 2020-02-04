@@ -18,7 +18,7 @@ aside {}
     margin: auto;
     padding: 2em 2em;
     display: block;
-    align-items:  baseline;
+    align-items:   baseline;
     flex-wrap: wrap;
   }
 
@@ -172,7 +172,7 @@ aside {}
 
 //Desktop
 
-@media (min-width: 80em) {
+@media (min-width: 120em) {
   .square-container {
     margin: 7px;
     width: 120em;
