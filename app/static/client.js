@@ -1,6 +1,6 @@
 //Constant
 // 0 = Debug Mode; 1 = Launchmode
-launchmode = 1;
+launchmode = 0;
 
 //Variable
 var el = x => document.getElementById(x);
@@ -15,7 +15,7 @@ function set_selection() {
     $('.result-label').hide();
   }
 
-  if (launchmode ==0){
+  if (launchmode == 0) {
     var ueberschrift = "Dies ist Überschrift.";
     var text = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labor.";
     el("info_general_title").innerHTML = ueberschrift;
@@ -31,9 +31,12 @@ function set_selection() {
 
 }
 
+
+
 function showPicker(inputId) {
   el("file-input").click();
   data_output("1_polyethylene_PE");
+
 }
 
 function showPicked(input) {
@@ -77,11 +80,12 @@ function analyze() {
       var response_for_selection = `${response["result"]}`;
       var split = response_for_selection.split("_", 1);
       selection = split[0];
-
+      update_illu();
       // show result boxes, to fill them up:
       activate_result();
       // Update of the texts through csv - used in update_text
       update_text(selection);
+
     }
 
   }
@@ -119,6 +123,13 @@ function print_data(data) {
   all_data = data;
 }
 
+
+
+function update_illu() {
+  var ba = document.getElementById("illu");
+  ba.innerHTML= "<img src=\"https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/view/square.JPG?fbclid=IwAR37wDdgmYbOGdW7oOYJPfdkFui5s-GMvQSamlXdkG31sxKW7Tfwh1FUzdc\">";
+}
+
 function update_text(selection) {
 
   if (selection != 99) {
@@ -152,5 +163,7 @@ function update_text(selection) {
     el("result-label").innerHTML = `${"The identified Plastic is " + content[4]}`;
 
   }
+
+
 
 }

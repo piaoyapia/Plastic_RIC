@@ -168,6 +168,16 @@ aside {}
   th {
     border-bottom: 1px solid #d4d4d4;
   }
+
+
+  .illu{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 }
 
 /*ADD ON END */
