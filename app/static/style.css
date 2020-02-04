@@ -11,7 +11,7 @@
 /*MOBILE*/
 aside {}
 
-@media (min-width: 10em) {
+@media screen and (max-width:29.9999em) {
 
 
   /* Square stuff-----------------*/
@@ -170,7 +170,7 @@ aside {}
 }
 
 /*DESKTOP */
-@media (min-width: 120em) {
+@media (min-width:29.9999em) {
   .square-container {
     margin: 7px;
     width: 60em;
