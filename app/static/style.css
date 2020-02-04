@@ -11,40 +11,42 @@
 /*MOBILE*/
 aside {}
 
-@media {
+@media (min-width: 0em) {
 
   /* Square stuff-----------------*/
   .square-container {
-
+    margin: auto;
+    padding: 2em 2em;
+    display: block;
+    align-items:  baseline;
+    flex-wrap: wrap;
   }
 
   .square {
-    display:  block;
-    flex-wrap: wrap;
     position: relative;
+    flex-basis: calc(33.333% -10px);
     width: 60em;
-    height:60em;
+    height: 60em;
     border: 2px solid;
     border-radius: 2px;
     color: #594615;
     box-sizing: border-box;
   }
-
+/*
   .square::before {
     content: '';
     display: block;
     padding-top: 100%;
   }
+*/
 
-    .square .content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-    }
-
-
+  .square .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
 
 
   /* Content -----------------*/
@@ -58,8 +60,6 @@ aside {}
     font-family: 'Lobster', cursive;
     text-align:center;
     padding-top: 3.5em;
-    width:100%;
-    height: 100%;
     font-size: 100px;
     position:  relative;
   }
@@ -172,7 +172,7 @@ aside {}
 
 //Desktop
 
-@media (min-width: 120em) {
+@media (min-width: 80em) {
   .square-container {
     margin: 7px;
     width: 120em;
@@ -180,7 +180,6 @@ aside {}
     display: flex;
     flex-wrap: wrap;
   }
-
 
   .square {
     width: 40em;
