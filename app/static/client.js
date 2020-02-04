@@ -65,6 +65,7 @@ function analyze() {
                         if (!f.type.match('image.*')) {
                           continue;
                         }
+                        
 
                         var reader = new FileReader();
 

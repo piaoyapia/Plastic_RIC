@@ -177,8 +177,8 @@ aside {}
 /* ADD ON */
 
 .thumb {
-  height: 200px;
-  width: 200px;
+  height: 55em;
+  width: 55em;
   border: 1px solid #000;
   margin: 10px 5px 0 0;
 }
