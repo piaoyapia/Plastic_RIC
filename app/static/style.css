@@ -11,8 +11,7 @@
 /*MOBILE*/
 aside {}
 
-@media (min-width: 10em) {
-
+@media (min-width: 0px) {
 
   /* Square stuff-----------------*/
   .square-container {
@@ -25,6 +24,7 @@ aside {}
     flex-basis: calc(33.333% - 10px);
     width: 60em;
     height: 60em;
+    margin: 7px;
     /*border: 2px solid;*/
     border-radius: 0px;
     color: #594615;
@@ -41,15 +41,16 @@ aside {}
     position: absolute;
     top: 0;
     left: 0;
+    width:100%;
     height: 100%;
-    width: 100%;
+
   }
 
   /* Content -----------------*/
   body {
     background-color: #fff;
     font-family: 'Oxygen', sans-serif;
-    width: 58em;
+    padding: 7px;
   }
 
   .title {
@@ -170,17 +171,17 @@ aside {}
 }
 
 /*DESKTOP */
-@media (min-width: 120em) {
+@media (min-width: 767px) {
   .square-container {
     margin: 7px;
-    width: 60em;
     height: auto;
     display: flex;
     flex-wrap: wrap;
   }
 
   .square {
-    width: 40em;
+    width: 60em;
+    height: 60em;
     height: auto;
     float: left;
   }
@@ -197,12 +198,6 @@ aside {}
     left: 0;
     height: 100%;
     width: 100%;
-  }
-
-  body {
-    background-color: #fff;
-    font-family: 'Oxygen', sans-serif;
-    width: 58em;
   }
 
   /*----- Changes for the bigger screen*/
