@@ -170,10 +170,10 @@ aside {}
 }
 
 /*DESKTOP */
-@media (min-width: 80em) {
+@media (min-width: 120em) {
   .square-container {
     margin: 7px;
-    width: 120em;
+    width: 60em;
     height: auto;
     display: flex;
     flex-wrap: wrap;
