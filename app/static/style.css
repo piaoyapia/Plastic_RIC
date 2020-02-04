@@ -13,11 +13,11 @@ aside {}
 
 @media (min-width: 10em) {
 
+
   /* Square stuff-----------------*/
   .square-container {
     display: block;
     flex-wrap: wrap;
-
   }
 
   .square {
@@ -49,9 +49,7 @@ aside {}
   body {
     background-color: #fff;
     font-family: 'Oxygen', sans-serif;
-    padding: 5em;
-    margin:5em;
-    align-items: center;
+    width: 58em;
   }
 
   .title {
