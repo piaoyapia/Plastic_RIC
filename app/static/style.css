@@ -11,7 +11,7 @@
 /*MOBILE*/
 aside {}
 
-@media screen and (max-width:29.9999em) {
+@media (min-width: 10em) {
 
 
   /* Square stuff-----------------*/
@@ -170,7 +170,7 @@ aside {}
 }
 
 /*DESKTOP */
-@media (min-width:29.9999em) {
+@media (min-width: 120em) {
   .square-container {
     margin: 7px;
     width: 60em;
@@ -197,6 +197,12 @@ aside {}
     left: 0;
     height: 100%;
     width: 100%;
+  }
+
+  body {
+    background-color: #fff;
+    font-family: 'Oxygen', sans-serif;
+    width: 58em;
   }
 
   /*----- Changes for the bigger screen*/
