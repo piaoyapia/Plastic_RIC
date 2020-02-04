@@ -125,6 +125,10 @@ aside {}
     color: #6FA5B0;
   }
 
+
+
+
+
   /*---- Buttons and stuff */
   button.choose-file-button {
     font-family: 'Lobster', cursive;
@@ -168,6 +172,20 @@ aside {}
     border-bottom: 1px solid #d4d4d4;
   }
 }
+
+
+/* ADD ON */
+
+.thumb {
+  height: 200px;
+  width: 200px;
+  border: 1px solid #000;
+  margin: 10px 5px 0 0;
+}
+
+
+/*ADD ON END */
+
 
 /*DESKTOP */
 @media (min-width: 57em) {
