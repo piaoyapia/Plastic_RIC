@@ -125,10 +125,6 @@ aside {}
     color: #6FA5B0;
   }
 
-
-
-
-
   /*---- Buttons and stuff */
   button.choose-file-button {
     font-family: 'Lobster', cursive;
@@ -173,20 +169,7 @@ aside {}
   }
 }
 
-
-/* ADD ON */
-
-.thumb {
-  height: 55em;
-  width: 55em;
-  border: 1px solid #000;
-  margin: 10px 5px 0 0;
-}
-
-
 /*ADD ON END */
-
-
 /*DESKTOP */
 @media (min-width: 57em) {
   .square-container {
@@ -225,7 +208,7 @@ aside {}
     padding-left: 7px;
     float: left;
     position: relative;
-    top:12%;
+    top: 12%;
     color: #594615;
   }
 
@@ -264,5 +247,5 @@ aside {}
     padding: 7.555%;
     color: #6FA5B0;
   }
-  }
+}
 }
