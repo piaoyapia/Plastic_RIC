@@ -13,6 +13,28 @@ aside {}
 
 @media (min-width: 10em) {
 
+
+
+  /* ADD on */
+  video: {
+  width: {
+    min: 1280,
+    ideal: 1920,
+    max: 2560,
+  },
+  height: {
+    min: 720,
+    ideal: 1080,
+    max: 1440
+  },
+  facingMode: 'environment'
+}
+
+async function getDevices(){
+  const devices = await navigator.mediaDevices.enumerateDevices();
+}
+  /* ADD on End */
+
   /* Square stuff-----------------*/
   .square-container {
     display: block;

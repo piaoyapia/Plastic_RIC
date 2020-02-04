@@ -38,6 +38,38 @@ function showPicker(inputId) {
 
 function showPicked(input) {
   el("upload-label").innerHTML = input.files[0].name;
+
+// second try: ADD ON
+
+
+if('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices){
+  console.log("Let's get this party started")
+}
+
+if('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices){
+  const stream = await navigator.mediaDevices.getUserMedia({video: true})
+}
+
+
+
+
+
+
+
+// -- end second try
+
+
+
+
+
+
+
+
+
+
+
+
+
   var reader = new FileReader();
   reader.onload = function(e) {
     el("image-picked").src = e.target.result;
