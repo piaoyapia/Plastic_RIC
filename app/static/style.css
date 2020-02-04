@@ -22,8 +22,8 @@ aside {}
   .square {
     position: relative;
     flex-basis: calc(33.333% - 10px);
-    width: 60em;
-    height: 60em;
+    width: 55em;
+    height: 55em;
     margin: 7px;
     /*border: 2px solid;*/
     border-radius: 0px;
@@ -173,14 +173,14 @@ aside {}
 @media (min-width: 62em) {
   .square-container {
     margin: 7px;
-    width: 120em;
+    width: 86em;
     height: auto;
     display: flex;
     flex-wrap: wrap;
   }
 
   .square {
-    width: 40em;
+    width: 60em;
     height: auto;
     float: left;
   }
@@ -203,7 +203,7 @@ aside {}
   .title {
     font-family: 'Lobster', cursive;
     text-align: left;
-    font-size: 120px;
+    font-size: 100px;
     padding-left: 7px;
     float: left;
     position: relative;
@@ -214,7 +214,7 @@ aside {}
   .floating_p {
     font-family: 'Oxygen', sans-serif;
     background-color: #F3E13C;
-    font-size: 200%;
+    font-size: 140%;
     position: absolute;
     height: 85%;
     padding: 7.555%;
@@ -225,10 +225,26 @@ aside {}
   }
 
   .info-title {
-    font-size: 200%;
+    background-color: #B5E2ED;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    font-size: 140%;
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    padding: 7.555%;
+    color: #6FA5B0;
   }
 
   .info-text {
-    font-size: 200%;
+    background-color: #B5E2ED;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 140%;
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    padding: 7.555%;
+    color: #6FA5B0;
+  }
   }
 }
