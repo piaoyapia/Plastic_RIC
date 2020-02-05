@@ -6,6 +6,12 @@ var selection;
 //Variable
 var el = x => document.getElementById(x);
 
+update_illu();
+function update_illu{
+  el("illu").innerHTML.src="https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/view/square_3.JPG?fbclid=IwAR37wDdgmYbOGdW7oOYJPfdkFui5s-GMvQSamlXdkG31sxKW7Tfwh1FUzdc";
+
+}
+
 
 function set_selection() {
   selection = 1;
