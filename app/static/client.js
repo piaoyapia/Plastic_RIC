@@ -99,7 +99,7 @@ function analyze() {
 function activate_result() {
   // was inside the main loop before
   $(".result-label").show();
-
+  $(".info-box").show();
 }
 
 
