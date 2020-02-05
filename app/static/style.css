@@ -126,6 +126,16 @@ aside {}
     color: #6FA5B0;
   }
 
+  .floating_impressum{
+    font-family: 'Oxygen', sans-serif;
+    background-color: #F3E13C;
+    font-size: 20px;
+    position: absolute;
+    height: 25%;
+    padding: 7.555%;
+
+  }
+
   /*---- Buttons and stuff */
   button.choose-file-button {
     font-family: 'Lobster', cursive;
@@ -170,18 +180,10 @@ aside {}
   }
 
 
-  .illustr{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
-}
 
-/*ADD ON END */
-/*DESKTOP */
+/*DESKTOP --------------------------------------------------------------------*/
 @media (min-width: 62em) {
   .square-container {
     margin: 7px;
