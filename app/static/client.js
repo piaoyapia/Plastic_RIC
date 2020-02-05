@@ -1,17 +1,10 @@
 //Constant
 // 0 = Debug Mode; 1 = Launchmode
-launchmode = 1;
+var launchmode = 1;
+var selection;
 
 //Variable
 var el = x => document.getElementById(x);
-
-
-update_illu();
-
-function update_illu() {
-  el("illu").innerHTML = "<img src=\"https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/view/square_4.JPG?fbclid=IwAR37wDdgmYbOGdW7oOYJPfdkFui5s-GMvQSamlXdkG31sxKW7Tfwh1FUzdc\" width=\"400px\" height=\"150px\">";
-}
-
 
 
 function set_selection() {
@@ -23,7 +16,7 @@ function set_selection() {
     $('.result-label').hide();
   }
 
-  if (launchmode == 0) {
+  if (launchmode ==0){
     var ueberschrift = "Dies ist Überschrift.";
     var text = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labor.";
     el("info_general_title").innerHTML = ueberschrift;
@@ -39,12 +32,9 @@ function set_selection() {
 
 }
 
-
-
 function showPicker(inputId) {
   el("file-input").click();
   data_output("1_polyethylene_PE");
-
 }
 
 function showPicked(input) {
@@ -58,7 +48,6 @@ function showPicked(input) {
 
     $(".analyze-button").show();
     el("analyze-button").innerHTML = "Start Analysis";
-
   };
   reader.readAsDataURL(input.files[0]);
 }
@@ -85,17 +74,16 @@ function analyze() {
       var response = JSON.parse(e.target.responseText);
 
       //später hier debuggen: Resultlabel in Antwort umwandeln
-      el("result-label").innerHTML = `${response["Das ist "+"result"]}`;
+      el("result-label").innerHTML = `${response["result"]}`;
       var response_for_selection = `${response["result"]}`;
       var split = response_for_selection.split("_", 1);
       selection = split[0];
-
+}
       // show result boxes, to fill them up:
       activate_result();
       // Update of the texts through csv - used in update_text
       update_text(selection);
 
-    }
 
   }
 
@@ -111,7 +99,7 @@ function analyze() {
 function activate_result() {
   // was inside the main loop before
   $(".result-label").show();
-  $(".info-box").show();
+
 }
 
 
@@ -132,9 +120,8 @@ function print_data(data) {
   all_data = data;
 }
 
-
-
 function update_text(selection) {
+
 
   if (selection != 99) {
     /// constant titles --> csv headlines
@@ -167,7 +154,5 @@ function update_text(selection) {
     el("result-label").innerHTML = `${"The identified Plastic is " + content[4]}`;
 
   }
-
-
 
 }
