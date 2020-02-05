@@ -1,15 +1,15 @@
 //Constant
 // 0 = Debug Mode; 1 = Launchmode
-launchmode = 0;
+launchmode = 1;
 
 //Variable
 var el = x => document.getElementById(x);
 
+
 update_illu();
 
 function update_illu() {
-  var image = document.getElementsByClassName("illu");
-  image.src = "https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/view/square.JPG?fbclid=IwAR37wDdgmYbOGdW7oOYJPfdkFui5s-GMvQSamlXdkG31sxKW7Tfwh1FUzdc";
+  el("illu").innerHTML = "<img src=\"https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/view/square_4.JPG?fbclid=IwAR37wDdgmYbOGdW7oOYJPfdkFui5s-GMvQSamlXdkG31sxKW7Tfwh1FUzdc\" width=\"400px\" height=\"150px\">";
 }
 
 
@@ -58,6 +58,7 @@ function showPicked(input) {
 
     $(".analyze-button").show();
     el("analyze-button").innerHTML = "Start Analysis";
+
   };
   reader.readAsDataURL(input.files[0]);
 }
@@ -84,7 +85,7 @@ function analyze() {
       var response = JSON.parse(e.target.responseText);
 
       //später hier debuggen: Resultlabel in Antwort umwandeln
-      el("result-label").innerHTML = `${response["result"]}`;
+      el("result-label").innerHTML = `${response["Das ist "+"result"]}`;
       var response_for_selection = `${response["result"]}`;
       var split = response_for_selection.split("_", 1);
       selection = split[0];
