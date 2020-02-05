@@ -13,7 +13,6 @@ aside {}
 
 @media (min-width: 10em) {
 
-
   /* Square stuff-----------------*/
   .square-container {
     display: block;
@@ -126,16 +125,6 @@ aside {}
     color: #6FA5B0;
   }
 
-  .floating_impressum{
-    font-family: 'Oxygen', sans-serif;
-    background-color: #F3E13C;
-    font-size: 20px;
-    position: absolute;
-    height: 25%;
-    padding: 7.555%;
-
-  }
-
   /*---- Buttons and stuff */
   button.choose-file-button {
     font-family: 'Lobster', cursive;
@@ -179,11 +168,18 @@ aside {}
     border-bottom: 1px solid #d4d4d4;
   }
 
-
+  .floating_impressum {
+    font-family: 'Oxygen', sans-serif;
+    background-color: #F3E13C;
+    font-size: 20px;
+    position: absolute;
+    height: 25%;
+    padding: 7.555%;
+  }
 }
 
-
-/*DESKTOP --------------------------------------------------------------------*/
+/*ADD ON END */
+/*DESKTOP */
 @media (min-width: 62em) {
   .square-container {
     margin: 7px;
@@ -238,6 +234,8 @@ aside {}
     font-size: 200%;
   }
 
+
+
   .info-title {
     background-color: #B5E2ED;
     font-family: 'Oxygen', sans-serif;
@@ -260,5 +258,4 @@ aside {}
     padding: 7.555%;
     color: #6FA5B0;
   }
-}
 }
