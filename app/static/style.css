@@ -15,6 +15,7 @@ aside {}
 
   /* Square stuff-----------------*/
   .square-container {
+    margin:auto;
     display: block;
     flex-wrap: wrap;
   }
