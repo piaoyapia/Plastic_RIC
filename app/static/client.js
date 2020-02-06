@@ -1,6 +1,6 @@
 //Constant
 // 0 = Debug Mode; 1 = Launchmode
-var launchmode = 1;
+var launchmode = 0;
 var selection;
 
 //Variable
@@ -90,10 +90,6 @@ function analyze() {
       activate_result();
       // Update of the texts through csv - used in update_text
       update_text(selection);
-
-
-
-
   }
 
   // Analyzing
@@ -102,7 +98,6 @@ function analyze() {
   var fileData = new FormData();
   fileData.append("file", uploadFiles[0]);
   xhr.send(fileData);
-
 }
 
 function activate_result() {
