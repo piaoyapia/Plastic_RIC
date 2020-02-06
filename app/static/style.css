@@ -2,15 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
-/* Colors
+/* Color Codes:
 #07384F
 #214E66
 #6FA5B0
 #B5E2ED
 */
-/*MOBILE*/
-aside {}
 
+aside {}
+/*MOBILE*/
 @media (min-width: 0em) {
 
   /* Square stuff-----------------*/
@@ -135,6 +135,27 @@ aside {}
     color: #6FA5B0;
   }
 
+  .square-impressum{
+    position: relative;
+    flex-basis: calc(33.333% - 10px);
+    width: 40em;
+    height: 50em;
+    margin: 7px;
+    margin-top: 2em;
+    /*border: 2px solid;*/
+    border-radius: 0px;
+    color: #594615;
+    box-sizing: border-box;
+  }
+  .floating_impressum {
+    font-family: 'Oxygen', sans-serif;
+    background-color: #F3E13C;
+    font-size: 15px;
+    position: absolute;
+    height: 25%;
+    padding: 3%;
+  }
+
   /*---- Buttons and stuff */
   button.choose-file-button {
     font-family: 'Lobster', cursive;
@@ -159,6 +180,7 @@ aside {}
     outline: 0;
   }
 
+/*
   table {
     margin: 0 auto;
     text-align: center;
@@ -177,32 +199,12 @@ aside {}
   th {
     border-bottom: 1px solid #d4d4d4;
   }
+  */
 
-
-  .square-impressum{
-    position: relative;
-    flex-basis: calc(33.333% - 10px);
-    width: 40em;
-    height: 50em;
-    margin: 7px;
-    margin-top: 2em;
-    /*border: 2px solid;*/
-    border-radius: 0px;
-    color: #594615;
-    box-sizing: border-box;
-  }
-  .floating_impressum {
-    font-family: 'Oxygen', sans-serif;
-    background-color: #F3E13C;
-    font-size: 15px;
-    position: absolute;
-    height: 25%;
-    padding: 3%;
-  }
 }
 
-/*ADD ON END */
-/*DESKTOP */
+
+/*iPad-Version */
 @media (min-width: 750px) {
   .square-container {
     margin: 7px;
@@ -237,7 +239,7 @@ aside {}
   }
 
   .floating_p {
-    font-size: 110%;
+    font-size: 100%;
   }
 
   button.choose-file-button {
@@ -257,7 +259,7 @@ aside {}
   }
 
   .info-text {
-    font-size: 110%;
+    font-size: 100%;
   }
 
   .square-impressum{
