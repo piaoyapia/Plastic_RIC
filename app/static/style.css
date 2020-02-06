@@ -213,7 +213,6 @@ aside {}
   }
 
   .square {
-    width: 30em;
     height: auto;
     float: left;
   }
@@ -232,53 +231,43 @@ aside {}
     width: 100%;
   }
 
-  /*----- Changes for the bigger screen*/
+
   .title {
-    font-family: 'Lobster', cursive;
-    text-align: left;
-    font-size: 100px;
-    padding-left: 7px;
-    float: left;
-    position: relative;
-    top: 12%;
-    color: #594615;
+    font-size: 300%;
   }
 
   .floating_p {
-    font-family: 'Oxygen', sans-serif;
-    background-color: #F3E13C;
-    font-size: 140%;
-    position: absolute;
-    height: 85%;
-    padding: 7.555%;
+    font-size: 110%;
+  }
+
+  button.choose-file-button {
+    font-size: 180%;
+  }
+
+  button.analyze-button {
+    font-size: 180%;
   }
 
   .result-label {
-    font-size: 200%;
+    font-size: 180%;
   }
 
-
-
   .info-title {
-    background-color: #B5E2ED;
-    font-family: 'Oxygen', sans-serif;
-    font-weight: bold;
-    font-size: 140%;
-    position: absolute;
-    width: 85%;
-    height: 85%;
-    padding: 7.555%;
-    color: #6FA5B0;
+    font-size: 180%;
   }
 
   .info-text {
-    background-color: #B5E2ED;
-    font-family: 'Oxygen', sans-serif;
-    font-size: 140%;
-    position: absolute;
-    width: 85%;
-    height: 85%;
-    padding: 7.555%;
-    color: #6FA5B0;
+    font-size: 110%;
   }
+
+  .square-impressum{
+    width: 50%;
+
+  }
+  .floating_impressum {
+
+  }
+
+
+
 }
