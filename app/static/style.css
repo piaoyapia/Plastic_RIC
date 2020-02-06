@@ -11,7 +11,7 @@
 /*MOBILE*/
 aside {}
 
-@media (min-width: 10em) {
+@media (min-width: 0em) {
 
   /* Square stuff-----------------*/
   .square-container {
@@ -23,8 +23,8 @@ aside {}
   .square {
     position: relative;
     flex-basis: calc(33.333% - 10px);
-    width: 55em;
-    height: 55em;
+    width: 40em;
+    height: 40em;
     margin: 7px;
     /*border: 2px solid;*/
     border-radius: 0px;
@@ -55,18 +55,18 @@ aside {}
 
   .title {
     font-family: 'Lobster', cursive;
-    text-align: left;
-    font-size: 60px;
+    text-align: center;
+    font-size: 80px;
     padding-left: 7px;
     position: absolute;
-    top: 40%;
+    top: 30%;
     color: #594615;
   }
 
   .floating_p {
     font-family: 'Oxygen', sans-serif;
     background-color: #F3E13C;
-    font-size: 44px;
+    font-size: 30px;
     position: absolute;
     height: 85%;
     padding: 7.555%;
@@ -87,7 +87,7 @@ aside {}
   .analyze {}
 
   .upload-label {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .illu{
@@ -116,7 +116,7 @@ aside {}
     background-color: #B5E2ED;
     font-family: 'Oxygen', sans-serif;
     font-weight: bold;
-    font-size: 44px;
+    font-size: 60px;
     position: absolute;
     height: 85%;
     width: 85%;
@@ -127,7 +127,7 @@ aside {}
   .info-text {
     background-color: #B5E2ED;
     font-family: 'Oxygen', sans-serif;
-    font-size: 44px;
+    font-size: 30px;
     position: absolute;
     width: 85%;
     height: 85%;
@@ -178,29 +178,44 @@ aside {}
     border-bottom: 1px solid #d4d4d4;
   }
 
+
+  .square-impressum{
+    position: relative;
+    flex-basis: calc(33.333% - 10px);
+    width: 40em;
+    height: 50em;
+    margin: 7px;
+    margin-top: 2em;
+    /*border: 2px solid;*/
+    border-radius: 0px;
+    color: #594615;
+    box-sizing: border-box;
+  }
   .floating_impressum {
     font-family: 'Oxygen', sans-serif;
     background-color: #F3E13C;
-    font-size: 20px;
+    font-size: 15px;
     position: absolute;
     height: 25%;
-    padding: 7.555%;
+    padding: 3%;
   }
+
+
 }
 
 /*ADD ON END */
 /*DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 750px) {
   .square-container {
     margin: 7px;
-    width: 86em;
+    width: 65em;
     height: auto;
     display: flex;
     flex-wrap: wrap;
   }
 
   .square {
-    width: 60em;
+    width: 30em;
     height: auto;
     float: left;
   }
