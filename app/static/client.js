@@ -1,6 +1,6 @@
 //Constant
 // 0 = Debug Mode; 1 = Launchmode
-var launchmode = 0;
+var launchmode = 1;
 var selection;
 
 //Variable
@@ -21,7 +21,9 @@ function set_selection() {
 
     $('.analyze-button').hide();
     $('.result-label').hide();
-        $('.info-box').hide();
+    $('.info-box').hide();
+    $('.square-impressum').hide();
+
   }
 
   if (launchmode ==0){
@@ -104,6 +106,7 @@ function activate_result() {
   // was inside the main loop before
   $(".result-label").show();
   $(".info-box").show();
+  $('.square-impressum').show();
 }
 
 
