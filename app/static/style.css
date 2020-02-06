@@ -204,18 +204,22 @@ aside {}
 }
 
 
-/*iPad-Version */
+/*=======================================================================================*/
+/*iPad-Version --------------------------------------------------------------------*/
+/* For future development: 'square-container width' defines how many squares are next to each other:
+2 x 'square width' = minimum size for two squares next to each other, 3 x the size of the squares is minimum for 3 squares,... */
+
 @media (min-width: 750px) {
   .square-container {
-    margin: 7px;
-    width: 65em;
-    height: auto;
-    display: flex;
+    width: auto; /* we get a grid on Desktop-PCs*/
+    display: block;
     flex-wrap: wrap;
+    margin-bottom: auto;
   }
 
   .square {
     height: auto;
+    width: 20em;
     float: left;
   }
 
@@ -255,19 +259,18 @@ aside {}
   }
 
   .info-title {
-    font-size: 180%;
+    font-size: 18px;
   }
 
   .info-text {
-    font-size: 100%;
+    font-size: 16px;
   }
 
   .square-impressum{
-    width: 50%;
+
 
   }
   .floating_impressum {
-
   }
 
 

@@ -18,9 +18,10 @@ function set_selection() {
   selection = 1;
   //hide, if the launchmode is on
   if (launchmode == 1) {
-    $('.info-box').hide();
+
     $('.analyze-button').hide();
     $('.result-label').hide();
+        $('.info-box').hide();
   }
 
   if (launchmode ==0){
@@ -52,7 +53,6 @@ function showPicked(input) {
     el("image-picked").src = e.target.result;
     el("image-picked").className = "";
     // show analyze button
-
     $(".analyze-button").show();
     el("analyze-button").innerHTML = "Start Analysis";
   };
