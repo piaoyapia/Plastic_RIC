@@ -8,14 +8,14 @@
 #6FA5B0
 #B5E2ED
 */
-
 aside {}
+
 /*MOBILE*/
 @media (min-width: 0em) {
 
   /* Square stuff-----------------*/
   .square-container {
-    margin:auto;
+    margin: auto;
     display: block;
     flex-wrap: wrap;
   }
@@ -90,13 +90,12 @@ aside {}
     font-size: 20px;
   }
 
-  .illu{
+  .illu {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-
   }
 
   .result-label {
@@ -135,25 +134,26 @@ aside {}
     color: #6FA5B0;
   }
 
-  .square-impressum{
+  .square-impressum {
     position: relative;
     flex-basis: calc(33.333% - 10px);
     width: 40em;
-    height: 20em;
+    height: 40em;
     margin: 7px;
     /*border: 2px solid;*/
     border-radius: 0px;
-    color: #594615;
     box-sizing: border-box;
   }
+
   .floating_impressum {
     font-family: 'Oxygen', sans-serif;
-    background-color: #F3E13C;
-    font-size: 15px;
+    font-size: 20px;
     position: absolute;
-    height: 100%;
-    padding: 3%;
-    margin-bottom: 2em;
+    width: 85%;
+    height: 85%;
+    padding: 7.555%;
+    background-color: #F3E13C;
+    color: #594615;
   }
 
   /*---- Buttons and stuff */
@@ -180,7 +180,7 @@ aside {}
     outline: 0;
   }
 
-/*
+  /*
   table {
     margin: 0 auto;
     text-align: center;
@@ -200,25 +200,23 @@ aside {}
     border-bottom: 1px solid #d4d4d4;
   }
   */
-
 }
-
 
 /*=======================================================================================*/
 /*iPad-Version --------------------------------------------------------------------*/
 /* For future development: 'square-container width' defines how many squares are next to each other:
 2 x 'square width' = minimum size for two squares next to each other, 3 x the size of the squares is minimum for 3 squares,... */
-
 @media (min-width: 750px) {
   .square-container {
-    width: auto; /* we get a grid on Desktop-PCs*/
+    width: auto;
+    /* we get a grid on Desktop-PCs*/
     display: block;
     flex-wrap: wrap;
     margin-bottom: auto;
   }
 
   .square {
-    height: auto;
+    height: 20em;
     width: 20em;
     margin: 0.5em;
     float: left;
@@ -237,7 +235,6 @@ aside {}
     height: 100%;
     width: 100%;
   }
-
 
   .title {
     font-size: 300%;
@@ -267,22 +264,16 @@ aside {}
     font-size: 16px;
   }
 
-  .square-impressum{
-    width: 20em;
-    height: 10em;
-    /*border: 2px solid;*/
-    border-radius: 0px;
-    color: #594615;
-    box-sizing: border-box;
-    position: relative;
+  .square-impressum {
+    height: 16.25em;
+    width: 41em;
+    margin: 0.5em;
     float: left;
   }
+
   .floating_impressum {
     font-size: 15px;
-    padding: 5%;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
+
   }
-
-
-
 }
