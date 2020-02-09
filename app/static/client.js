@@ -7,9 +7,12 @@ var selection;
 var el = x => document.getElementById(x);
 
 
+
 function illu_update(){
-  el('illu').src = 'https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/view/square_2.JPG?fbclid=IwAR37wDdgmYbOGdW7oOYJPfdkFui5s-GMvQSamlXdkG31sxKW7Tfwh1FUzdc';
+  //no default picture - updated later
+  el('illu').src = '';
 }
+
 
 
 function set_selection() {
@@ -151,16 +154,16 @@ function update_text(selection) {
     var content = allRows[selection].split('§');
     // Choose the first/second/third/forth column entry of the choosen row.
     //Row gets choosen by the structure of the data.csv (4x4 table)
-    el("info_general_content").innerHTML = content[1]; // name of the plastic
-    el("info_market_content").innerHTML = content[2];
-    el("info_recycling_content").innerHTML = content[3];
-    el("info_alternatives_content").innerHTML = content[4];
+    el("info_general_content").innerHTML = content[0]; // name of the plastic
+    el("info_market_content").innerHTML = content[1];
+    el("info_recycling_content").innerHTML = content[2];
+    el("info_alternatives_content").innerHTML = content[3];
 
     //Update label needed for analysis:
-    el("result-label").innerHTML =  "The app recognized "+ content[0] + " on the picture.";
+    el("result-label").innerHTML =  content[0] + " is " + content[4];
 
     // Update illustrative Picture
-    el("illu").src = "'" + content[5] + "'";
+    el("illu").src = content[5];
   }
 
 }
