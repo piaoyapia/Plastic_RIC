@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Muli');
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
-@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
 
 /* Color Codes:
 #07384F
@@ -49,14 +49,15 @@ aside {}
   /* Content -----------------*/
   body {
     background-color: #fff;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Damion';
     padding: 7px;
   }
 
   .title {
-    font-family: 'Lobster', cursive;
+    font-family: 'Fjalla One', sans-serif;
     text-align: center;
     font-size: 80px;
+    font-weight: bold;
     padding-left: 7px;
     position: absolute;
     top: 30%;
@@ -158,7 +159,7 @@ aside {}
 
   /*---- Buttons and stuff */
   button.choose-file-button {
-    font-family: 'Lobster', cursive;
+    font-family: 'Fjalla One', cursive;
     background-color: #ffffff;
     font-size: 80px;
     color: #8A6117;
@@ -167,7 +168,7 @@ aside {}
   }
 
   button.analyze-button {
-    font-family: 'Lobster', cursive;
+    font-family: 'Fjalla One', cursive;
     width: 100%;
     height: 100%;
     border: solid 1px #D6AE16;
@@ -237,7 +238,7 @@ aside {}
   }
 
   .title {
-    font-size: 300%;
+    font-size: 250%;
   }
 
   .floating_p {
