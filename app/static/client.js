@@ -160,7 +160,7 @@ function update_text(selection) {
     el("result-label").innerHTML =  "The app recognized "+ content[0] + " on the picture.";
 
     // Update illustrative Picture
-    el("illu").src = content[4];
+    el("illu").src = "'" + content[4] + "'";
   }
 
 }
