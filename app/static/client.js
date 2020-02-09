@@ -8,7 +8,7 @@ var el = x => document.getElementById(x);
 
 
 function illu_update(){
-  document.getElementById('illu').src = 'https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/view/square_2.JPG?fbclid=IwAR37wDdgmYbOGdW7oOYJPfdkFui5s-GMvQSamlXdkG31sxKW7Tfwh1FUzdc';
+  el('illu').src = 'https://raw.githubusercontent.com/piaoyapia/Plastic_RIC/master/app/view/square_2.JPG?fbclid=IwAR37wDdgmYbOGdW7oOYJPfdkFui5s-GMvQSamlXdkG31sxKW7Tfwh1FUzdc';
 }
 
 
@@ -159,6 +159,8 @@ function update_text(selection) {
     //Update label needed for analysis:
     el("result-label").innerHTML =  "The app recognized "+ content[0] + " on the picture.";
 
+    // Update illustrative Picture
+    el("illu").src = content[4];
   }
 
 }
