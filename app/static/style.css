@@ -26,8 +26,8 @@ aside {}
     width: 40em;
     height: 40em;
     margin: 7px;
-    /*border: 2px solid;*/
-    border-radius: 0px;
+    /*border: 2px solid;
+    border-radius: 0px;*/
     color: #594615;
     box-sizing: border-box;
   }
@@ -108,14 +108,14 @@ aside {}
     height: 85%;
     width: 85%;
     padding: 7.555%;
-    font-size: 60px;
+    font-size: 40px;
   }
 
   .info-title {
     background-color: #B5E2ED;
     font-family: 'Oxygen', sans-serif;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 40px;
     position: absolute;
     height: 85%;
     width: 85%;
@@ -253,7 +253,7 @@ aside {}
   }
 
   .result-label {
-    font-size: 180%;
+    font-size: 18px;
   }
 
   .info-title {

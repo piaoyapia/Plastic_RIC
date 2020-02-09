@@ -160,7 +160,7 @@ function update_text(selection) {
     el("info_alternatives_content").innerHTML = content[3];
 
     //Update label needed for analysis:
-    el("result-label").innerHTML =  content[0] + " is " + content[4];
+    el("result-label").innerHTML =  "The analyzed plastic is " + content[4];
 
     // Update illustrative Picture
     el("illu").src = content[5];
