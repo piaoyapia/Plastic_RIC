@@ -212,7 +212,7 @@ aside {}
     /* we get a grid on Desktop-PCs*/
     display: block;
     flex-wrap: wrap;
-    margin-bottom: auto;
+    margin-bottom: 2em;
   }
 
   .square {
