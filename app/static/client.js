@@ -1,6 +1,6 @@
 //Constant
 // 0 = Debug Mode; 1 = Launchmode
-var launchmode = 1;
+var launchmode = 0;
 var selection;
 
 //Variable
@@ -158,7 +158,7 @@ function update_text(selection) {
     el("plasticName_content").innerHTML = content[4];
 
     //Update label needed for analysis:
-    el("result-label").innerHTML = `${"The identified Plastic is " + content[4]}`;
+    el("result-label").innerHTML = content[4];
 
   }
 
