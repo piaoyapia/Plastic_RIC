@@ -155,10 +155,9 @@ function update_text(selection) {
     el("info_market_content").innerHTML = content[1];
     el("info_recycling_content").innerHTML = content[2];
     el("info_alternatives_content").innerHTML = content[3];
-    el("plasticName_content").innerHTML = content[4];
 
     //Update label needed for analysis:
-    el("result-label").innerHTML = content[4];
+    el("result-label").innerHTML = content[0];
 
   }
 
