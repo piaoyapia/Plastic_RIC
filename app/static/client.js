@@ -151,13 +151,13 @@ function update_text(selection) {
     var content = allRows[selection].split('§');
     // Choose the first/second/third/forth column entry of the choosen row.
     //Row gets choosen by the structure of the data.csv (4x4 table)
-    el("info_general_content").innerHTML = content[0];
+    el("info_general_content").innerHTML = content[0]; // name of the plastic
     el("info_market_content").innerHTML = content[1];
     el("info_recycling_content").innerHTML = content[2];
     el("info_alternatives_content").innerHTML = content[3];
 
     //Update label needed for analysis:
-    el("result-label").innerHTML = content[0];
+    el("result-label").innerHTML =  "The app recognized "+ content[0] + " on the picture.";
 
   }
 
