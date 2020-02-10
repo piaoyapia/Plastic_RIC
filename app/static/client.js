@@ -8,7 +8,7 @@ var el = x => document.getElementById(x);
 
 
 
-function illu_update(){
+function illu_update() {
   //no default picture - updated later
   el('illu').src = '';
 }
@@ -29,7 +29,7 @@ function set_selection() {
 
   }
 
-  if (launchmode ==0){
+  if (launchmode == 0) {
     var ueberschrift = "Dies ist Überschrift.";
     var text = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labor.";
     el("info_general_title").innerHTML = ueberschrift;
@@ -90,11 +90,11 @@ function analyze() {
       var response_for_selection = `${response["result"]}`;
       var split = response_for_selection.split("_", 1);
       selection = split[0];
-}
-      // show result boxes, to fill them up:
-      activate_result();
-      // Update of the texts through csv - used in update_text
-      update_text(selection);
+    }
+    // show result boxes, to fill them up:
+    activate_result();
+    // Update of the texts through csv - used in update_text
+    update_text(selection);
   }
 
   // Analyzing
@@ -160,7 +160,7 @@ function update_text(selection) {
     el("info_alternatives_content").innerHTML = content[3];
 
     //Update label needed for analysis:
-    el("result-label").innerHTML =  "The analyzed plastic is " + content[4];
+    el("result-label").innerHTML = "The analyzed plastic is " + content[4];
 
     // Update illustrative Picture
     el("illu").src = content[5];
