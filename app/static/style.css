@@ -148,7 +148,7 @@ aside {}
 
   .floating_impressum {
     font-family: 'Oxygen', sans-serif;
-    font-size: 20px;
+    font-size: 23px;
     position: absolute;
     width: 85%;
     height: 85%;
@@ -274,7 +274,7 @@ aside {}
   }
 
   .floating_impressum {
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 4em;
 
   }
