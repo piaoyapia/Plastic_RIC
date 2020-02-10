@@ -85,7 +85,7 @@ function analyze() {
 
       var response = JSON.parse(e.target.responseText);
 
-      //später hier debuggen: Resultlabel in Antwort umwandeln
+
       el("result-label").innerHTML = `${response["result"]}`;
       var response_for_selection = `${response["result"]}`;
       var split = response_for_selection.split("_", 1);
@@ -131,6 +131,10 @@ function print_data(data) {
 }
 
 function update_text(selection) {
+
+  if (selection == 8) {
+    $('.info-box').hide();
+  }
 
 
   if (selection != 99) {
