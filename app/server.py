@@ -9,7 +9,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1aeMspZGtWp9FVcNli54DsjHTGSMPcD6d'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1_xAKlrnCR6N-DjacaMHMEtZpf9d0CM2A'
 export_file_name = 'export_60.pkl'
 
 classes = ['1_polyethylene_PET', '2_high_density_polyethylene_PE-HD', '3_polyvinylchloride_PVC', '4_low_density_polyethylene_PE-LD', '5_polypropylene_PP','6_polystyrene_PS', '7_other_resins', '8_no_plastic' ]
