@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
-
 /* Color Codes:
 #07384F
 #214E66
@@ -12,12 +11,17 @@ aside {}
 
 /*MOBILE*/
 @media (min-width: 0em) {
+  * {
+    margin: 0em;
+    padding: 0em;
+  }
 
   /* Square stuff-----------------*/
   .square-container {
     margin: auto;
     display: block;
     flex-wrap: wrap;
+    padding: 1em;
   }
 
   .square {
@@ -25,7 +29,6 @@ aside {}
     flex-basis: calc(33.333% - 10px);
     width: 40em;
     height: 40em;
-    margin: 7px;
     /*border: 2px solid;
     border-radius: 0px;*/
     color: #594615;
@@ -50,7 +53,6 @@ aside {}
   body {
     background-color: #fff;
     font-family: 'Damion';
-    padding: 7px;
   }
 
   .title {
@@ -276,6 +278,5 @@ aside {}
   .floating_impressum {
     font-size: 14px;
     margin-bottom: 4em;
-
   }
 }
