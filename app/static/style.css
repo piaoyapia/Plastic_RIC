@@ -141,7 +141,6 @@ aside {}
     flex-basis: calc(33.333% - 10px);
     width: 40em;
     height: 40em;
-    margin: 7px;
     /*border: 2px solid;*/
     border-radius: 0px;
     box-sizing: border-box;
@@ -208,7 +207,7 @@ aside {}
 /*iPad-Version --------------------------------------------------------------------*/
 /* For future development: 'square-container width' defines how many squares are next to each other:
 2 x 'square width' = minimum size for two squares next to each other, 3 x the size of the squares is minimum for 3 squares,... */
-@media (min-width: 750px) {
+@media (min-width: 768px) {
   .square-container {
     width: auto;
     /* we get a grid on Desktop-PCs*/
@@ -218,9 +217,9 @@ aside {}
   }
 
   .square {
-    height: 20em;
-    width: 20em;
-    margin: 0.5em;
+    height: 17em;
+    width: 17em;
+    margin: 0.2em;
     float: left;
   }
 
@@ -241,21 +240,17 @@ aside {}
   body {
     background-color: #fff;
     font-family: 'Damion';
-
-
-    width:80%;
-        margin-left:auto;
-        margin-right:auto;
-
-
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .title {
-    font-size: 250%;
+    font-size: 225%;
   }
 
   .floating_p {
-    font-size: 100%;
+    font-size: 85%;
   }
 
   button.choose-file-button {
@@ -271,23 +266,25 @@ aside {}
   }
 
   .info-title {
-    font-size: 18px;
+    font-size: 85%;
   }
 
   .info-text {
-    font-size: 16px;
+    font-size: 85%;
   }
 
   .square-impressum {
-    height: 16.25em;
-    width: 41em;
-    margin: 0.5em;
-    margin-bottom: 2em;
+    width: 34.4em;
+    height: 14em;
+    margin: 0.2em;
     float: left;
+
+
   }
 
   .floating_impressum {
-    font-size: 14px;
-    margin-bottom: 4em;
+    font-size: 75%;
+    margin-bottom: 2em;
+
   }
 }
