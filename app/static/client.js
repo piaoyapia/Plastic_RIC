@@ -12,6 +12,7 @@ function illu_update() {
   //no default picture - updated later
   el('illu').src = '';
   el('recycling-pic').src='';
+  el('alternative-pic').src='';
 }
 
 
@@ -172,6 +173,9 @@ function update_text(selection) {
 
     // Update recycling picture
     el("recycling-pic").src = content[6];
+
+    // Update alternative picture
+    el("recycling-pic").src = content[7];
   }
 
 }
