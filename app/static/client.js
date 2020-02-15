@@ -1,6 +1,6 @@
 //Constant
 // 0 = Debug Mode; 1 = Launchmode
-var launchmode = 0;
+var launchmode = 1;
 var selection;
 
 //Variable
