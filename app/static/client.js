@@ -175,7 +175,7 @@ function update_text(selection) {
     el("recycling-pic").src = content[6];
 
     // Update alternative picture
-    el("recycling-pic").src = content[7];
+    el("alternative-pic").src = content[7];
   }
 
 }
