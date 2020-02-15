@@ -10,7 +10,7 @@ var el = x => document.getElementById(x);
 
 function illu_update() {
   //no default picture - updated later
-  el('defined').src = '';
+  el('defined-pic').src = '';
   el('recycling-pic').src='';
   el('alternative-pic').src='';
 }
