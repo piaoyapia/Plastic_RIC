@@ -1,4 +1,4 @@
-## 7 classes of plastics defined by the RIC: 🐳
+## 7 classes of plastics defined by the RIC 🐳
 
 The machine learning model was built with fastai. See kaggle for the used training set and a kernel.
 Fastai Version used: 1.0.60 - App runs fine on render.com
