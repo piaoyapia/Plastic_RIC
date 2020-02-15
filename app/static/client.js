@@ -10,7 +10,7 @@ var el = x => document.getElementById(x);
 
 function illu_update() {
   //no default picture - updated later
-  el('illu').src = '';
+  el('defined').src = '';
   el('recycling-pic').src='';
   el('alternative-pic').src='';
 }
@@ -169,7 +169,7 @@ function update_text(selection) {
     el("result-label").innerHTML = "The analyzed plastic " + content[4];
 
     // Update illustrative Picture
-    el("illu").src = content[5];
+    el("defined-pic").src = content[5];
 
     // Update recycling picture
     el("recycling-pic").src = content[6];
